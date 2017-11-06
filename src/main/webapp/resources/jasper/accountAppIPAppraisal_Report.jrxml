@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report16" language="groovy" pageWidth="2480" pageHeight="3508" columnWidth="2480" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="96fef2e9-8970-4409-a987-71b3c116d668">
+	<property name="ireport.zoom" value="0.5644739300537776"/>
+	<property name="ireport.x" value="410"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="url" class="java.lang.String"/>
+	<field name="ipAddress" class="java.lang.String"/>
+	<field name="IC_CountryCode" class="java.lang.String"/>
+	<field name="IC_CountryName" class="java.lang.String"/>
+	<field name="IC_CountryThreat" class="java.lang.String"/>
+	<field name="IC_PSIP" class="java.lang.String"/>
+	<field name="IC_Proxy" class="java.lang.String"/>
+	<field name="IC_isMobile" class="java.lang.String"/>
+	<field name="IC_CompanyName" class="java.lang.String"/>
+	<field name="IC_CompanyDomain" class="java.lang.String"/>
+	<field name="IC_CompanyCity" class="java.lang.String"/>
+	<field name="IC_Distance" class="java.lang.String"/>
+	<field name="IC_IpThreat" class="java.lang.String"/>
+	<field name="IC_TwoWeeksCount" class="java.lang.String"/>
+	<detail>
+		<band height="3508" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="2480" height="3508" uuid="942e14bf-db98-4c87-82fb-6be154cdcb67"/>
+				<imageExpression><![CDATA[$P{url}+"pdfImage/accountAppAppraisal002.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement mode="Opaque" x="1041" y="217" width="1339" height="85" uuid="394a6b23-bf28-4dab-a778-72a2575412e6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="48" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ipAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="1041" y="316" width="1339" height="85" uuid="b227f7c6-f2fe-4691-a084-64d0e5611924"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="48" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IC_IpThreat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="1041" y="416" width="1339" height="85" uuid="9bcb20f9-be53-4293-bb6b-4a48b0862934"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="48" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IC_CountryName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="1041" y="516" width="1339" height="85" uuid="d7b0ba6f-7d96-4a2f-a289-8a796120d36c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="48" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IC_CountryThreat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="1041" y="618" width="1339" height="85" uuid="25b2513c-bbbc-4732-9c98-dc67b88e5e97"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="48" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IC_PSIP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="1041" y="717" width="1339" height="85" uuid="a6b4407e-6a8e-4e99-a96b-adac1e75f5b3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="48" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IC_Proxy}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="1041" y="817" width="1339" height="85" uuid="6a41991c-d9b7-464b-bb95-5b5c6d8a5b4c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="48" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IC_isMobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="1041" y="916" width="1339" height="85" uuid="d4b58d9f-5d70-43a6-a341-1e51cf0f2ba1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="48" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IC_CompanyName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="1041" y="1013" width="1339" height="85" uuid="6f6f95c8-eb14-47f4-bfb6-38438e8234eb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="48" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IC_CompanyDomain}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="1041" y="1112" width="1339" height="85" uuid="01e7a0bb-7010-427d-a4ae-29128c6bb99c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="48" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IC_CompanyCity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="1041" y="1213" width="1339" height="85" uuid="74be73e7-5aee-4202-a57d-3b36900dbec1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="48" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IC_Distance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="1041" y="1313" width="1339" height="85" uuid="e9fb5ed9-e560-4f5f-a44a-8d972780dae9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="48" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IC_TwoWeeksCount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

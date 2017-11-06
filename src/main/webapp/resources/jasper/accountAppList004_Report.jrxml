@@ -1,0 +1,1614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report5" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="91242f8d-3c38-4f4a-86d4-671e2b87960f">
+	<property name="ireport.zoom" value="2.415765000000001"/>
+	<property name="ireport.x" value="23"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="shopNo1" class="java.lang.String"/>
+	<parameter name="shopNo2" class="java.lang.String"/>
+	<parameter name="shopNo3" class="java.lang.String"/>
+	<parameter name="birthday1" class="java.lang.String"/>
+	<parameter name="birthday2" class="java.lang.String"/>
+	<parameter name="birthday3" class="java.lang.String"/>
+	<field name="postCode" class="java.lang.String"/>
+	<field name="kanaAddress" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="kanaName" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<detail>
+		<band height="822" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="10" width="22" height="15" uuid="472c87fb-3f66-473a-b7ca-995aaa68abc1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[確認日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="76" y="10" width="20" height="15" uuid="9dab463d-d63a-4615-b9e1-348a0a35bdd8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[年]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="10" width="20" height="15" uuid="74ad40d1-ec7e-46c6-98e7-c21bd901b867"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[月]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="10" width="20" height="15" uuid="61fb17b2-6bb6-47d2-bf34-70627db18df8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="232" y="4" width="124" height="20" uuid="14d41dc6-19f8-4b8f-b549-6ff8ffde21ea"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="16" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[確　認　記　録]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="367" y="4" width="20" height="15" uuid="42492057-d044-4d21-89e5-e0dec94d06e4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[店番]]></text>
+			</staticText>
+			<rectangle radius="2">
+				<reportElement x="387" y="-2" width="12" height="30" uuid="a1c4a742-b9cd-4d8c-900a-7908c25f02d2"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="2">
+				<reportElement x="399" y="-2" width="12" height="30" uuid="1aa86a4a-1285-4896-b61b-447f7ccb6dac"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="2">
+				<reportElement x="411" y="-2" width="12" height="30" uuid="e7bbb19b-6f48-4e0e-bba3-8c0b2666588c"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="427" y="4" width="20" height="10" uuid="086074d9-dda3-4faa-81cc-8e9b72771488"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[CMF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="13" width="20" height="10" uuid="86434670-4986-4653-ae91-01437e803661"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[番号]]></text>
+			</staticText>
+			<rectangle radius="2">
+				<reportElement x="454" y="-2" width="12" height="30" uuid="d2d3dd5b-4121-4551-8488-a60394349f59"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="2">
+				<reportElement x="466" y="-2" width="12" height="30" uuid="0fbc1438-29bc-4969-9aa1-6dec13aebca8"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="2">
+				<reportElement x="478" y="-2" width="12" height="30" uuid="f5856c9b-eba8-472f-8df0-d7ad0083578d"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="2">
+				<reportElement x="490" y="-2" width="12" height="30" uuid="4a141cd7-6389-4426-b33c-98068f8f1c01"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="2">
+				<reportElement x="502" y="-2" width="12" height="30" uuid="95525f73-814d-44a4-a1d4-3d79675cffcc"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="2">
+				<reportElement x="514" y="-2" width="12" height="30" uuid="eae98746-b30c-4c2a-b612-323a643e7563"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="2">
+				<reportElement x="526" y="-2" width="12" height="30" uuid="d41a2605-48d0-41d4-9c79-1903663d36fa"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="9" y="28" width="323" height="126" uuid="c79a5212-af5e-4a47-bd59-a6d0e64c5543"/>
+			</rectangle>
+			<line>
+				<reportElement x="9" y="71" width="323" height="1" uuid="d9fb6e5d-0c5d-4623-a281-b30481621c6a"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="9" y="88" width="323" height="1" uuid="1742acde-086a-452b-8def-e9ec73cebbb8"/>
+				<graphicElement>
+					<pen lineWidth="0.75" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="9" y="134" width="323" height="1" uuid="ce7c18ca-01a9-40bd-b68c-cddc064ba3a9"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="92" y="28" width="1" height="126" uuid="2d01ddcf-6d0a-489a-85b0-b9dbdd1f46cd"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="228" y="135" width="1" height="19" uuid="1d77e4ab-0e21-4306-9cb6-76f01ac283ca"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="11" y="29" width="80" height="42" uuid="f7e1789e-dce1-4cc8-b0c3-4d680b060c84"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[住　所]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="74" width="80" height="12" uuid="5da6fef1-1cde-4853-9dd1-0ee4927f33b6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[フリガナ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="89" width="80" height="44" uuid="f3c64f5d-dca7-4189-a5fa-c0697d3d8b38"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[氏名•名称]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="115" width="80" height="13" uuid="c6eb75c0-d6cb-4cbd-83f6-fcfa048cd10d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(振込の壜合は振込人名）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="135" width="80" height="18" uuid="b02502b3-7f1f-4019-9def-1c147a69aca6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[生年月日※]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="134" y="137" width="20" height="15" uuid="00aae46c-08a6-4076-862d-1fe77c1141a0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[年]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="137" width="20" height="15" uuid="f3988598-8125-4220-a952-76ab4f2a8121"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[月]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="208" y="137" width="20" height="15" uuid="d606c928-487a-4778-9e36-467c2902ca64"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="137" width="44" height="15" uuid="c3570848-41f8-4d96-b579-869c503c7991"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[国籍：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="155" width="323" height="10" uuid="57442f42-62b4-40de-893b-d0229abba81e"/>
+				<textElement>
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[※生年月日は本人以外の名義で取引（例:親播者が子の名義で授業料等振込する場合等）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="165" width="323" height="10" uuid="87a14f1f-2149-4d67-97fb-f1aab9c3c46b"/>
+				<textElement>
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[する場合、来店者（親権者等)の生年月日を記入0]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="175" width="333" height="10" uuid="e35a01f3-9680-4747-929d-5397dfc61676"/>
+				<textElement>
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[※書類番号は裏面参照。外国人で在留力一ド等により国籍が確認できる場合は上記に記載。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="49" width="42" height="11" uuid="0a5955e2-1ef0-42fa-acf1-50c93fffbd8c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="10" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[支店]]></text>
+			</staticText>
+			<line>
+				<reportElement x="382" y="59" width="160" height="1" uuid="a11dfea3-52be-4078-9f08-165afdc3a539"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement x="382" y="65" width="160" height="52" uuid="896bac62-7bf5-466e-8e53-8532fe21f077"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="382" y="80" width="160" height="1" uuid="7ba30b3e-795d-4d7c-8b41-06d460eb8361"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="435" y="65" width="1" height="52" uuid="f1df249f-691f-43a4-9233-c47f8330a3db"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="488" y="65" width="1" height="52" uuid="ab6867b6-fbc7-4a0a-a19f-8f220547ee1b"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="382" y="67" width="52" height="11" uuid="19f9404b-d1c1-4809-98db-1e2c2265dd9b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[補　佐]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="67" width="52" height="11" uuid="e7c586dd-ab06-4954-a4ae-f8d379679778"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[確認者印]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="489" y="67" width="52" height="11" uuid="d604d87a-80b3-4c6d-9a30-74c5a55f69b0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[作成者印]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-3" y="802" width="510" height="15" uuid="6bac0346-4ffa-4bd9-b054-cb4482352bb5"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[00104545 ed06f4dc-fbd1_11e5-8000-080037d64a94]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="337" y="122" width="205" height="62" uuid="60fb8c56-8402-4b8b-8ab9-ecfe33bbd3bf"/>
+			</rectangle>
+			<line>
+				<reportElement x="358" y="122" width="1" height="62" uuid="5aaf9b97-005c-4b85-88ff-8a38be6c52ac"/>
+			</line>
+			<staticText>
+				<reportElement x="340" y="123" width="16" height="15" uuid="7e1e4b42-e077-47fb-9567-fd45c5690221"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[取]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="138" width="16" height="15" uuid="d4756c2d-4cfa-4b99-a2fb-1663acba0d9e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[引]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="153" width="16" height="15" uuid="8c4aed04-db9a-4ef4-a601-e0c45348acd0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[種]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="168" width="16" height="15" uuid="e7ae779e-78dc-48d8-8a65-35a9d558ed1c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[類]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="123" width="160" height="11" uuid="a13a7f8d-92df-4750-9238-73afe80763ce"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[①口座開設②200万円超の現金取引（両替等）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="133" width="160" height="11" uuid="78e070c1-3f64-4799-88b0-4eae22495065"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[③ 10万円超の現金による為替取引(振込]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="374" y="143" width="160" height="11" uuid="f1147f3e-3623-43b5-a0ff-25a36f355982"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[公共料金収納、小切手支払、株雄当錄収書支払）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="153" width="160" height="11" uuid="8a963abc-0f20-4f63-81d3-13d5d3ece008"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[④ 外国送金•外貨両替 ⑤未済先]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="163" width="160" height="11" uuid="259a9227-537a-41a9-8b59-ed31057534aa"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[⑥ 高リスク取引（　　　　　　　　　　 ）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="173" width="160" height="11" uuid="303aa5f9-1120-4de6-9bc6-a242fa4337c5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[⑦ その他（　　　　　　　　　　　　　 ）]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="9" y="184" width="533" height="330" uuid="52ba51f9-c610-487a-a475-be9c84b5d27b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="34" y="184" width="57" height="330" uuid="cb5f95b4-e586-402e-9755-7d85d88ac8a8"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="34" y="184" width="56" height="120" uuid="562391c3-aded-450c-af0e-757f886a4038"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="90" y="184" width="50" height="330" uuid="eda1d780-b5c6-4e49-a44c-4f7295db4864"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="90" y="184" width="50" height="48" uuid="a313aaae-7a2e-41ff-89f2-cfde0190550a"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="90" y="232" width="50" height="44" uuid="46d2b68d-18ab-47fa-9070-ae6808b85804"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="140" y="184" width="402" height="20" uuid="9f1dee2b-a430-4195-9a50-4c669d920b39"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="140" y="204" width="402" height="30" uuid="1655f578-0936-4e72-96c0-c7f322b55e1a"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="140" y="232" width="402" height="44" uuid="6831f774-000f-4625-9885-00264be93977"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="119" y="304" width="50" height="30" uuid="1af8b46c-9fc0-438e-861c-904683dd0227"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="119" y="334" width="50" height="20" uuid="14b0da10-6795-4018-8690-76e148ab0a00"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="90" y="276" width="452" height="28" uuid="c604339e-b05a-4e8f-a9ad-cb0c3d6b2b87"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="337" y="185" width="67" height="50" uuid="d54ee445-0af6-4072-a914-d27ae9e9e724"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="405" y="253" width="137" height="1" uuid="b8d866a0-aef2-41fb-9f8d-25394ed7109e"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="337" y="184" width="1" height="120" uuid="1fe560ee-488f-45b8-8727-bb6d68e15e30"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="404" y="184" width="1" height="120" uuid="bd321141-9216-444e-8334-79dbfef97369"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="455" y="184" width="1" height="48" uuid="d38dd423-0b65-4763-9673-b3581196b984"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="455" y="254" width="1" height="20" uuid="25e94f3a-140b-4544-bae8-f54d9bfb959c"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="251" y="335" width="1" height="19" uuid="828f7ab8-f6e5-4f50-bd02-9a9ad432fcb8"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="338" y="335" width="1" height="19" uuid="1fcf794a-3265-4dc5-874b-269aeeffa883"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="34" y="354" width="508" height="1" uuid="b7928519-2e84-44e8-a137-a7693248daf9"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="34" y="394" width="508" height="1" uuid="be6cc326-05b1-4856-8343-f50764234c71"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="34" y="448" width="508" height="1" uuid="d7b457e2-b57d-4bd1-b24b-f54c03ec6182"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="90" y="334" width="452" height="1" uuid="8f50a0db-61d0-40ea-bceb-239ce4601bbb"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="91" y="374" width="451" height="1" uuid="5ab0d720-3766-4d0e-a3da-f814786de2b6"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="91" y="419" width="272" height="1" uuid="3aa01242-cf17-44b4-b17e-53b28b2567a2"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="91" y="475" width="272" height="1" uuid="6b15a729-e359-4417-bb95-4e74dd0d024f"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="363" y="394" width="1" height="120" uuid="e4c280d2-dd8b-42b4-8df5-96a2d9604b66"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="383" y="394" width="1" height="120" uuid="fd4e4704-904d-40ec-bc05-f1a3c6457601"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement x="9" y="520" width="533" height="282" uuid="d10a9512-e343-410d-bab4-bf8fcf159d1f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="34" y="520" width="56" height="258" uuid="4c43722e-7e00-47c2-b323-b6540afcd8ad"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="34" y="542" width="508" height="1" uuid="19b0fae4-4494-487f-8612-aed50b2ab119"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="34" y="588" width="508" height="1" uuid="3374e386-1bf0-40e1-b5dd-cd7b11ec8d0b"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="90" y="575" width="225" height="1" uuid="1f9fddb2-5c67-4e84-b786-4ae3e843913d"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="315" y="520" width="1" height="153" uuid="3930eef0-b6f6-4ccb-929d-98800ec992b0"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="395" y="520" width="1" height="153" uuid="d2a91a5f-2c9b-465d-898a-5718122cac52"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="352" y="565" width="190" height="1" uuid="aac95b77-6bca-4d96-9121-e82f77cf0275"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="352" y="543" width="1" height="45" uuid="43e2e7bd-55f0-422a-8ba9-a5d339d2cec7"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="34" y="695" width="508" height="1" uuid="f6c483fa-2019-4631-b160-78c7c5699b69"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="90" y="672" width="452" height="1" uuid="245c6db2-5fcd-4aa5-a210-db8654e9ea50"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="90" y="612" width="225" height="1" uuid="7779b4d0-e5a0-4521-ad9c-44e9af16a101"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="140" y="642" width="402" height="1" uuid="01df214d-d55a-4fd9-878b-95d8cbcc5573"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="396" y="612" width="146" height="1" uuid="c75e78e5-c0bf-491e-894b-81712ce71e1a"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="445" y="588" width="1" height="55" uuid="e45b9734-b4d4-4492-8a31-2a204851ca2c"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="137" y="589" width="1" height="83" uuid="326d53c0-6acd-425a-ad2f-b4160799dd48"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="34" y="746" width="508" height="1" uuid="6d529fca-8330-41da-9326-3be8675d024a"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="90" y="727" width="452" height="1" uuid="2186490a-6f39-4e09-bb07-c550296a125c"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="316" y="728" width="1" height="19" uuid="bf4b5f8e-c327-4608-9982-2a55e2e39dba"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="397" y="728" width="1" height="44" uuid="1c6709c4-dbee-4026-81d6-b23c94fb3c6d"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="34" y="778" width="508" height="1" uuid="fac52e55-1342-445d-8048-9f5826f9812e"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="447" y="747" width="1" height="25" uuid="b2daef5b-35bb-4e8a-856a-2ce7c4a9a8b5"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement x="34" y="770" width="508" height="32" uuid="e64ded5b-4730-490b-8fab-70192d43b6c2"/>
+			</rectangle>
+			<line>
+				<reportElement x="157" y="747" width="1" height="55" uuid="4c00f909-c26b-4e4e-8274-ecb855e736dd"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="12" y="263" width="20" height="175" uuid="c2d247dd-2058-4ae0-8063-c174d80d0f27"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[本
+人
+特
+定
+事
+項
+確
+認
+欄]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="215" width="40" height="18" uuid="99498457-68a9-4dd3-a850-6e2acdc9b6fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[確認方法]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="230" width="40" height="18" uuid="b1264880-b362-4d8d-82fa-200680baf5f0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[および]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="245" width="40" height="18" uuid="a5da4aff-7c49-4482-b285-fbab920776d8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[確認害類]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="94" y="200" width="40" height="18" uuid="088767d0-7c86-4e9c-a2d0-e64db66070e6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[対面]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="94" y="246" width="40" height="18" uuid="a4064efa-ab06-41de-a88f-448e41c62bf5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[非対面]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="186" width="182" height="16" uuid="49e81ee0-138f-4c56-a500-d05935039c56"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[①免許証グノv-ブ(書類番号：　　　　　　　　 )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="211" width="182" height="16" uuid="4f525726-6c1f-4d89-b063-da41699946a7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[②住民票グノ w.ブ(書類番号：　　　　　　　 ）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="239" width="182" height="16" uuid="40b8d364-833e-45aa-9ee4-2c125861175a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[③郵送•とりまとめ受付(書類番号：　　　　　 ）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="257" width="182" height="16" uuid="46caa18a-8e28-4426-9d9d-ccfe952b54d5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[　(郵送受付日： 　　　年 　　　月 　　　日）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="282" width="182" height="16" uuid="e49a61eb-5e67-41c9-b7d3-e49faa0ef776"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[確認睿類名（謇類番号99の場合）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="188" width="40" height="16" uuid="05c75cc7-7d92-4678-b25e-13193917cce4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[コピ一]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="201" width="40" height="16" uuid="51beb400-302e-4dc5-8b17-e9e5b1e9f101"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[有・無]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="214" width="40" height="16" uuid="77031149-2b1e-41c9-8c58-60c7dc030913"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[無の場合=>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="235" width="40" height="10" uuid="dd606ff4-d73d-4bd5-94cc-c314800a2b66"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[外国人の]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="246" width="48" height="10" uuid="cfd35904-d471-47f4-832f-82a746984c5f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[一過性取引時]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="347" y="257" width="50" height="8" uuid="0018dd5e-3d1d-4fb6-8c2e-4043b54c1ef1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[※在留期間が9D日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="353" y="266" width="39" height="8" uuid="00b420f4-329c-4c81-a812-9a44d40d6e2d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[を超えないこと]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="277" width="40" height="16" uuid="9db6d1c4-1256-4db6-a117-1037f1e12d07"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[有効期限]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="288" width="45" height="16" uuid="d4bb8a02-bc54-4276-803a-b11f99d83359"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[または交付日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="186" width="40" height="16" uuid="2fa51db1-de3f-4961-9812-ef35317680e9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[確認時刻]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="456" y="184" width="40" height="10" uuid="9565543a-1bec-45e4-a7db-dfde9cb2940f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[午前]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="456" y="194" width="84" height="10" uuid="6a28c1f2-b322-4ea4-b3ce-0936bf2bbbf7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[午後　　　　時　　 分]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="211" width="40" height="16" uuid="9e2f84f8-40da-456d-aa3d-67bc7f20b542"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[記番号・
+発行元]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="456" y="217" width="86" height="14" uuid="921541dc-4eff-4bfb-be80-480acde3dee7"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="ＭＳ ゴシック" size="5" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[※発行元は記番号がない場合に記入]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="408" y="236" width="134" height="16" uuid="e9f87ac8-f937-4f54-89c1-a52a4e856e84"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[国籍の記載は必須（氏名棚下部に記赶）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="257" width="40" height="16" uuid="007eef94-a0f7-4b9a-9d8a-f78651498f98"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[入国日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="457" y="257" width="83" height="16" uuid="8cda26f1-7b66-46f5-972e-9064879976ae"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[　　　年 　　月 　　日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="282" width="120" height="16" uuid="8fdbcea2-b574-4a15-a2de-38c6ef4c9454"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[　　　年 　　　月 　　　日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="311" width="40" height="18" uuid="5452a056-c48e-4ca7-9ae9-5d48de52949b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[補完書類]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="330" width="45" height="18" uuid="02375e77-e7fc-4bf9-bd04-b728dafdf531"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(住所が異なる場合〉]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="356" width="40" height="18" uuid="d35db8d4-5f75-47c3-a0c0-c10b7ab40c8b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[郵送確認]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="373" width="40" height="18" uuid="1d140b45-f8ff-470c-b112-c6c79be8ece9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[確認方法が
+②③の場合]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="396" width="40" height="18" uuid="49194643-5933-489e-9aab-539449bb4d9e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[個人]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="414" width="49" height="35" uuid="ce2c6fa6-4bd8-43d0-b396-751bf22c8877"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[個人事案主等
+で上記届出住 所•氏名と異な る場合のみ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="453" width="40" height="18" uuid="410955c0-31a3-4ddb-b4a0-adc7bd90d4dc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[法人等]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="471" width="54" height="35" uuid="071731f1-b196-4005-9e41-2b4061d201fe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[支店•営業所で
+取引する場合、本社等の住所・名称を記入]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="307" width="407" height="13" uuid="cac4b6eb-88a8-40b2-9167-2b90de3f6997"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[　□他の確®書類(書類番号：　　　　　 ）□国税•地方税領収証書または納税証明書□社会保険料領収証書]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="319" width="407" height="13" uuid="3d4ebcf5-194c-4870-b9d4-f559c8d76319"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[　□公共料金(電気、ガス、水道、固定電話、NHK)領収書ロその他（ 　　　　　　　　　　　　　　　　　）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="337" width="139" height="13" uuid="0442d5ed-ecc8-4283-96e7-9bb2c1afadc9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[コピ一　　有　・　無　　無の場合=> ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="337" width="52" height="13" uuid="4d233e99-02cf-419f-9899-fe770c7e5b3c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[記番号•発行元]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="355" width="40" height="18" uuid="ef153f9b-1f43-44db-ae34-3ea9498159f0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[送付物件]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="375" width="40" height="18" uuid="b0774b01-94d8-43c7-aff0-4808402804c7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[発送日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="398" width="40" height="18" uuid="45c89a72-09ce-4808-8528-d923bc4a8730"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[住所]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="426" width="40" height="18" uuid="95a65f87-f6b4-438f-8428-91be496c75e1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[氏名]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="453" width="40" height="18" uuid="9508103b-abd3-4a3d-ace8-65cd36d97685"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[住所]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="488" width="40" height="18" uuid="887958ae-6cb8-4f36-9334-c62a8729fadf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[名称]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="355" width="300" height="18" uuid="a3190dd4-2ec1-49b7-b26b-4513b6f42df4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[□CDカード　□通帳　□新規礼状□その他（　　　　　　　　　　　　　　　　　　　　)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="375" width="300" height="18" uuid="fed8c040-5eec-43ad-afce-d11d5d99e078"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[　　　　年　　　　月　　　　日（CDカードは発行登録日）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="364" y="399" width="19" height="46" uuid="96e9fbf3-4485-4c10-881c-b316db8b8515"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[理
+由]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="364" y="453" width="19" height="53" uuid="5fee135f-a079-404c-9ebf-297fd1e5758f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[所
+在
+地
+の
+確
+認]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="396" width="140" height="12" uuid="3b3b034d-0302-48c3-979a-f6c1b7425744"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[・店舖名使用、商売上の都合]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="409" width="140" height="12" uuid="7a1f8769-64ee-4796-accd-580c4abb8fed"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[・旧宇、新宇(正字.簡体字)の違い]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="422" width="140" height="12" uuid="c41c9850-0151-46b7-8cc4-a140526b7768"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[・入学金、授業料の振込]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="435" width="140" height="12" uuid="6df4523e-36bd-4e47-a67a-34ba191efffb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[・(　　　　　　　　　　　　　　　　　　　　)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="406" y="450" width="100" height="12" uuid="38998fc5-c182-4717-9fb5-7370929c0c9e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[登記していない支店•営業所等]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="406" y="462" width="100" height="12" uuid="e7ca17d0-8adf-4bfa-91fa-eab6cb69413e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[で取引する場合]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="476" width="140" height="12" uuid="79e58822-9c87-49ee-a3c0-eefaa626bf27"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[・公共料金領収書•住宅地図•名刺]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="489" width="140" height="12" uuid="38a4b83f-c5d3-4f37-bb82-a1aa0d39e752"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[・名簿・インターネット・営業許可証]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="501" width="140" height="12" uuid="a36865e5-d663-4ef2-83be-2dc66cf33aba"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[・現地訪問・(　　　　　　　　　　　 )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="453" width="10" height="22" uuid="7099fcbf-430d-4134-b1a9-832f2b8bf12e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="20" isBold="false" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="506" y="454" width="10" height="22" uuid="4f4e8464-1c8d-4e28-886d-f908ff6fb49e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="20" isBold="false" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="520" width="20" height="260" uuid="c7e6056c-059b-4e29-9858-d6f76e4ba978"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[取
+引
+の
+任
+に
+当
+た
+る
+代
+理
+人
+等
+確
+認
+欄]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="522" width="40" height="18" uuid="98c70618-05c2-42b8-9838-ac547b1b0cff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[住所]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="557" width="40" height="18" uuid="fdf9dc35-d65a-46d0-910a-ae8681359481"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[氏名]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="614" width="40" height="18" uuid="fdb60f69-f7bb-4dee-8ca1-a4731ab0d76e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[確認方法]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="632" width="40" height="18" uuid="be12273b-ef41-4828-8bcb-252fd2d2321d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[および]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="650" width="40" height="18" uuid="a3254f82-3a7e-4a72-80d7-a21756b01ad6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[確認害類]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="550" width="40" height="18" uuid="0a38d956-bf2a-4500-9adc-68d68ad9795b"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[フリカ，ナ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="577" width="177" height="10" uuid="ead8764f-70cc-4558-8dfe-3a9f0af0482a"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[確認済の場合　　面・通・印・CD CMFNo.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="592" width="40" height="18" uuid="6403942e-ef25-4222-b07b-fdb6b32fa7ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[対面]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="632" width="40" height="18" uuid="481637de-122b-4d0c-8dba-690d3286db6a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[非対面]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="592" width="160" height="18" uuid="9af6f2df-adab-41c7-bd0b-7cda432e5126"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[①免許証グ卜プ(書類番号： 　       　 ）  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="619" width="160" height="18" uuid="565365fd-c172-44b2-b16c-0d580ba1a59e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[②住民票グノV-プ(書類番号： 　      　）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="644" width="160" height="15" uuid="7fdf78da-bd97-434a-b03c-79009d9d2408"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[③郵送•とりまとめ(書類番号：          )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="658" width="160" height="15" uuid="a8478ac8-a42f-4215-877c-63de9d602630"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(郵送受付日 　　　年　　　月　　　日)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="675" width="209" height="18" uuid="25f4d38d-5b3a-4640-a8f1-3a13e12b430d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[確認書類名（害類番号：99の場合のみ）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="523" width="40" height="18" uuid="a81214fb-6402-45b1-bd4c-578a479fa876"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[生年月日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="523" width="134" height="18" uuid="f1ed525d-6305-44e0-8c52-2d4ab627ac7d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[年　　　月　　　日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="317" y="545" width="34" height="40" uuid="8547a9e2-094f-4331-b920-bbdb56775d4b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[顧客
+との
+関係]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="544" width="34" height="20" uuid="9183eb6e-67b2-4cb7-8b4e-07cc87398fa5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[個人]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="567" width="34" height="20" uuid="77f9a75c-9d1e-43c3-bc00-43b135113ee5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[法人等]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="545" width="134" height="18" uuid="8ae63f1f-bfc3-4fdb-a926-7a63ac24ca91"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[配偶者・親権者・（ 　　　　　　)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="568" width="134" height="18" uuid="ba1db46d-7502-40d7-8209-ad830a399330"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[代表者・経理担当者・（ 　　　　)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="334" y="590" width="40" height="16" uuid="ac28f1b9-c6a2-44a8-b32c-6628b55540e0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[コピ一]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="334" y="607" width="40" height="16" uuid="78ffe975-c53e-4517-aa9f-4f689ad22608"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[有・無]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="334" y="624" width="40" height="16" uuid="18966740-0069-4d2f-a189-b35dd0cd1f26"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[無の場合=>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="591" width="34" height="20" uuid="46eee16e-2f66-4ae6-8ffe-eb5c0c8150a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[確認時刻]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="620" width="40" height="16" uuid="ef1a94b3-4a51-4274-9d87-42377cedaa63"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[記番号・
+発行元]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="590" width="40" height="10" uuid="cabc8b5e-1a2c-4ac5-b601-5b7f86325066"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[午前]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="452" y="601" width="89" height="10" uuid="6de73cc5-4f8d-46cf-96dd-0f5e8423f91b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[午後　　　　時　　　分]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="625" width="89" height="14" uuid="9800b10b-afd2-47f5-80ab-1b5997d461be"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="ＭＳ ゴシック" size="5" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[※発行元は記番号がない場合に記入]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="336" y="643" width="40" height="16" uuid="b438707d-80d6-4be9-bf5f-91454011f21a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[有効期限]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="334" y="657" width="45" height="16" uuid="9ff51326-1f8f-4cdb-809b-f43f62d03099"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[または交付日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="419" y="650" width="120" height="16" uuid="6f19423f-f941-419d-9be3-ea3dfb2b6611"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[　　　年 　　　月 　　　日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="701" width="40" height="18" uuid="d09f8cfd-1b26-41fd-8ce7-429a8214e316"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[補完書類]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="719" width="45" height="18" uuid="81af7303-4da9-467b-8c65-63c9536cc475"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(住所が異なる場合〉]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="94" y="698" width="407" height="13" uuid="5fdd8e59-c3b4-470b-b7e1-cf98bd49eb6f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[　□他の確®書類(書類番号：　　　　　 ）□国税・地方税領収証書または納税証明書□社会保険料領収証書]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="712" width="407" height="13" uuid="fa0e6f15-d7e6-4a36-ba3f-63fb7b1dd24c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[　□公共料金(電気、ガス、水道、固定電話、NHK)領収書ロその他（ 　　　　　　　　　　　　　　　　　）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="730" width="139" height="13" uuid="e0cf4915-8226-470c-abe0-5c08a35eded9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[コピ一　　有　・　無　　無の場合=> ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="332" y="730" width="52" height="13" uuid="f66d2dda-8e3b-4db0-8756-c3a6523aeeae"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[記番号•発行元]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="750" width="40" height="18" uuid="1fffc708-04ba-438a-8912-cdffaed62b53"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[郵送確認]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="103" y="750" width="40" height="18" uuid="b9dbd016-e8b8-4ea8-b67a-721c90694045"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[送付物件]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="750" width="226" height="18" uuid="d430414c-78b7-4c2d-8fe1-2cf38addd7e9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[□新規礼状　□その他（　　　　　　　　　　　　　　　　　)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="750" width="40" height="18" uuid="da5b2254-5b12-4793-b74f-b857fb607fd4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[発送日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="447" y="750" width="92" height="18" uuid="ed4ee2c1-a015-4de7-b115-b15bdf514556"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[年　　　月　　　日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="777" width="91" height="18" uuid="cfad52d8-ff2d-4aca-91c8-63e5a5b6326c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[取引の任にあたってい ると認められる理由]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="775" width="374" height="13" uuid="2df2af7c-9283-413e-94c1-da44873556ea"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[□電話確認　□銀行が関係を承知　□身分証明書(社員証等）ロ役員登記あり]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="787" width="374" height="13" uuid="9ee0dcf7-20d6-419b-a503-90f9705bf8c6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[□同居親族であることを確認 □その他（　　　　　　　　　　　　　　　　　　　　　　　　　　　）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="800" width="118" height="13" uuid="8eeec091-7756-4db0-8080-834dde858bef"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(保存時間・取引終了後7年)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="800" width="160" height="13" uuid="730fa975-67ae-4606-b7dd-cdfd556d24a5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(001－105）帳票様式集収録　事　Ｈ25.2制]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="388" y="-1" width="10" height="29" uuid="a30376d9-14a7-46d2-afc1-a40484f2b6b0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="14" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{shopNo1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="-1" width="10" height="29" uuid="7f4584e0-1076-4b79-8ad4-f70fc425c382"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="14" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{shopNo2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="412" y="-1" width="10" height="29" uuid="2dc6b409-6cf2-4c4b-b268-9756974d0e95"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="14" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{shopNo3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="97" y="33" width="7" height="8" uuid="bb827cd7-933a-433d-aeda-07b14e9bbf60"/>
+				<textElement>
+					<font fontName="ＭＳ ゴシック" size="5" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[テ]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="108" y="30" width="50" height="10" uuid="2490276a-a314-4273-bb53-2de0cd014d4c"/>
+				<textElement>
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{postCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="169" y="30" width="153" height="10" uuid="7f5f39f3-73b5-4496-9578-c8dfb938e450"/>
+				<textElement>
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kanaAddress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="97" y="43" width="225" height="24" uuid="114ed1cb-0b85-46f7-b6ab-0a306bdc79a2"/>
+				<textElement>
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="96" y="74" width="226" height="12" uuid="f9bdf25e-9140-4f41-be99-99b62ee9aa77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kanaName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="96" y="91" width="226" height="39" uuid="f19e62e7-5161-42ef-8afd-502a2c583779"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="108" y="138" width="25" height="14" uuid="eca1e06c-72ab-421a-b027-a724f19e9b50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{birthday1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="154" y="137" width="16" height="15" uuid="4b06edcc-9305-459e-8b89-83028beace1c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{birthday2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="192" y="137" width="16" height="15" uuid="269065c9-69ba-4c24-8cc5-612f7fbe7ca6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{birthday3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="143" y="399" width="218" height="17" uuid="15cd2d4b-10e0-44ca-85bb-dd51b7aae41c"/>
+				<textElement>
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="143" y="426" width="218" height="18" uuid="1c9cbd6f-a426-4fdf-a583-8b0594e2fa2b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

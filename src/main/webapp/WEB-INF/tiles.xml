@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Master -->
+	<!--
+	<definition name="master.page" template="/public/template/master.jsp">
+		<put-attribute name="header" value="/public/template/header.jsp" />
+		<put-attribute name="footer" value="/public/template/footer.jsp" />
+	</definition>
+	-->
+	<!-- Pages -->
+	<!--
+	<definition name="welcomePage" extends="master.page">
+		<put-attribute name="body" value="/protected/welcomePage.jsp" />
+	</definition>
+	
+	<definition name="contactsList" extends="master.page">
+		<put-attribute name="body" value="/protected/contacts/contacts.jsp" />
+	</definition>
+	-->
+	
+	<definition name="login" template="/public/login.jsp">
+	</definition>
+	<definition name="master" template="/public/template/master.jsp">
+	</definition>
+	
+	<definition name="welcomePage" template="/protected/welcomePage.jsp">
+    </definition>
+    <!-- パスワード変更 -->
+    <definition name="passwordUpd" template="/protected/password/passwordUpd.jsp">
+    </definition>    
+    <!-- パスワード変更 -->
+    <definition name="passwordUpdate" template="/protected/password/passwordUpdate.jsp">
+    </definition>    
+    <!-- バッチ一覧 -->
+    <definition name="batch" template="/protected/batch/batch.jsp">
+    </definition>    
+
+    <!-- masterData -->
+    <definition name="masterData" template="/protected/masterData/masterData.jsp">
+    </definition>
+    <!-- ユーザ一覧 -->
+    <definition name="userList" template="/protected/user/userList.jsp">
+    </definition>    
+    <!-- 店舗ATM一覧 -->
+    <definition name="storeATMList" template="/protected/master/storeATMList.jsp">
+    </definition>
+    <!-- IYO 店舗ATM一覧 -->
+    <definition name="iYoStoreATMList" template="/protected/master/iYoStoreATMList.jsp">
+    </definition>
+    <!-- 114 店舗ATM一覧 -->
+    <definition name="114StoreATMList" template="/protected/master/114StoreATMList.jsp">
+    </definition>
+     <!-- 権限管理 -->
+    <definition name="authorityList" template="/protected/authority/authorityList.jsp">
+    </definition>
+    <!-- 口座開設 -->
+    <definition name="accountAppList" template="/protected/account/accountAppList.jsp">
+    </definition> 
+    <!-- yamagata 口座開設 -->
+    <definition name="accountYamaGataAppList" template="/protected/account/accountYamaGataAppList.jsp">
+    </definition> 
+    <!-- 114 口座開設 -->
+    <definition name="account114AppList" template="/protected/account/account114AppList.jsp">
+    </definition> 
+    <!-- 114 本人確認書類 -->
+    <definition name="accountDocumentList" template="/protected/document/accountDocumentList.jsp">
+    </definition> 
+    <!-- Push通知確認一覧 -->
+    <definition name="pushRecordAppList" template="/protected/push/pushRecordAppList.jsp">
+    </definition> 
+    <!-- yamagata Push通知確認一覧 -->
+    <definition name="pushRecordAppYamaGataList" template="/protected/push/pushRecordAppYamaGataList.jsp">
+    </definition>   
+    <!-- 114 Push通知確認一覧 -->
+    <definition name="documentRecordList" template="/protected/record/documentRecordList.jsp">
+    </definition>   
+    <!-- 114 Push通知本人確認書類 -->
+    <definition name="pushRecordApp114List" template="/protected/push/pushRecordApp114List.jsp">
+    </definition>   
+    <!-- ファイル一覧 -->
+    <definition name="fileList" template="/protected/imageFile/fileList.jsp">
+    </definition> 
+    <!-- ログインユーザ更新 -->
+    <definition name="uptLoginUser" template="/protected/login/uptLoginUser.jsp">
+    </definition>
+    <!-- ユーザ一覧 -->
+    <definition name="loginUserList" template="/protected/login/loginUserList.jsp">
+    </definition> 
+
+    <!-- アプリケーション管理 -->
+    <definition name="application" template="/protected/application/application.jsp">
+    </definition>
+    <!-- コンテンツ種別 -->
+    <definition name="type" template="/protected/type/type.jsp">
+    </definition>
+    <!-- コンテンツ管理 -->
+    <definition name="contents" template="/protected/contents/contents.jsp">
+    </definition>
+    <!-- iyo利用ユーザー管理 -->
+    <definition template="/protected/useUser/useUserList.jsp" name="useUserList"> </definition>
+    <definition template="/protected/useUser/useUserDownLoad.jsp" name="useUserDownLoad"> </definition>
+    <!-- 114利用ユーザー管理 -->
+    <definition template="/protected/useUser/useUser114List.jsp" name="useUser114List"> </definition>
+    <!-- yamagata送信管理履歴 -->
+    <definition template="/protected/message/pushMessage.jsp" name="pushMessage"> </definition>
+    <!-- iyo送信管理履歴 -->
+    <definition template="/protected/message/iyoPushMessage.jsp" name="iyoPushMessage"> </definition>
+    <!-- iyo送信管理push -->
+    <definition template="/protected/message/iyoPushUserList.jsp" name="iyoPushUserList"> </definition>
+     <!-- 汎用DB＆データダウンロード管理 -->
+    <definition template="/protected/generalPurpose/generalPurpose.jsp" name="generalPurpose"> </definition>
+   	<!--  パスワードリセット--> 
+  	<definition name="passwordReset" template="/public/passwordReset.jsp" />
+
+	<definition name="timeout" template="/resources/html/timeout.jsp">
+    </definition>
+    <definition name="expire" template="/resources/html/expire.jsp">
+    </definition>
+    <!-- file -->
+    <definition name="file" template="/protected/file/file.jsp">
+    </definition>
+        <definition name="accountLoanList" template="/protected/account/accountLoanList.jsp">
+    </definition>
+      <definition name="pushRecordLoanList" template="/protected/push/pushRecordLoanList.jsp">
+    </definition>
+</tiles-definitions>

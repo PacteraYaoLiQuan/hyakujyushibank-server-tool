@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="4800" pageHeight="595" orientation="Landscape" columnWidth="4760" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d4ee8f85-2196-457d-bf52-f5ab5dad3c8f">
+	<property name="ireport.zoom" value="2.4200000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="accountAppSeq" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="kanaName" class="java.lang.String"/>
+	<field name="birthday" class="java.lang.String"/>
+	<field name="sex" class="java.lang.String"/>
+	<field name="address01" class="java.lang.String"/>
+	<field name="address02" class="java.lang.String"/>
+	<field name="kanaAddress" class="java.lang.String"/>
+	<field name="otherOccupations" class="java.lang.String"/>
+	<field name="teleNumber" class="java.lang.String"/>
+	<field name="phoneNumber" class="java.lang.String"/>
+	<field name="channel" class="java.lang.String"/>
+	<field name="applicationDate" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="kanaLastName" class="java.lang.String"/>
+	<field name="kanaFirstName" class="java.lang.String"/>
+	<field name="age" class="java.lang.String"/>
+	<field name="postCode" class="java.lang.String"/>
+	<field name="kanaAddress1" class="java.lang.String"/>
+	<field name="kanaAddress2" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="cardType" class="java.lang.String"/>
+	<field name="noApplicationService1" class="java.lang.String"/>
+	<field name="noApplicationService2" class="java.lang.String"/>
+	<field name="tradingPurposes1" class="java.lang.String"/>
+	<field name="tradingPurposes2" class="java.lang.String"/>
+	<field name="tradingPurposes3" class="java.lang.String"/>
+	<field name="tradingPurposes4" class="java.lang.String"/>
+	<field name="tradingPurposes5" class="java.lang.String"/>
+	<field name="tradingPurposes6" class="java.lang.String"/>
+	<field name="tradingPurposes7" class="java.lang.String"/>
+	<field name="tradingPurposes8" class="java.lang.String"/>
+	<field name="tradingPurposes9" class="java.lang.String"/>
+	<field name="tradingPurposes10" class="java.lang.String"/>
+	<field name="occupation1" class="java.lang.String"/>
+	<field name="occupation2" class="java.lang.String"/>
+	<field name="occupation3" class="java.lang.String"/>
+	<field name="occupation4" class="java.lang.String"/>
+	<field name="occupation5" class="java.lang.String"/>
+	<field name="occupation6" class="java.lang.String"/>
+	<field name="occupation7" class="java.lang.String"/>
+	<field name="occupation8" class="java.lang.String"/>
+	<field name="occupation9" class="java.lang.String"/>
+	<field name="occupation10" class="java.lang.String"/>
+	<field name="occupation11" class="java.lang.String"/>
+	<field name="occupation12" class="java.lang.String"/>
+	<field name="occupation13" class="java.lang.String"/>
+	<field name="holdAccountBankNumber" class="java.lang.String"/>
+	<field name="holdAccountNumber" class="java.lang.String"/>
+	<field name="accountDeposit" class="java.lang.String"/>
+	<field name="directServicesContractBankNumber" class="java.lang.String"/>
+	<field name="directServicesContract" class="java.lang.String"/>
+	<field name="directServicesContractAccountNumber" class="java.lang.String"/>
+	<field name="accountAppMotive" class="java.lang.String"/>
+	<field name="knowProcess" class="java.lang.String"/>
+	<field name="telRegisterPerTrans" class="java.lang.String"/>
+	<field name="telRegisterPerDay" class="java.lang.String"/>
+	<field name="telOncePerTrans" class="java.lang.String"/>
+	<field name="telOncePerDay" class="java.lang.String"/>
+	<field name="internetRegisterPerTrans" class="java.lang.String"/>
+	<field name="internetRegisterPerDay" class="java.lang.String"/>
+	<field name="internetOncePerTrans" class="java.lang.String"/>
+	<field name="internetOncePerDay" class="java.lang.String"/>
+	<field name="securityPassword" class="java.lang.String"/>
+	<field name="directServicesCardPassword" class="java.lang.String"/>
+	<field name="prefectures" class="java.lang.String"/>
+	<title>
+		<band/>
+	</title>
+	<detail>
+		<band height="18" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="0" width="4754" height="18" uuid="5de196ff-98da-445c-b9e7-f6c9aa8527b0"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="114" y="0" width="1" height="18" uuid="6d6d0db4-9dae-42a3-8c5d-1e192724bf6d"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="151" y="0" width="1" height="18" uuid="da2b57be-99fd-4821-aca9-545fe415cfa6"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="260" y="0" width="1" height="18" uuid="79996770-4e3d-4b7d-b1e0-d2c418ffc4de"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="371" y="0" width="1" height="18" uuid="72087602-274d-4acb-af4d-58017be868d7"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="481" y="0" width="1" height="18" uuid="20e09bb0-6a1a-4ea9-9cee-8160ae73ddce"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="1" y="0" width="113" height="18" isPrintWhenDetailOverflows="true" uuid="cef4b672-887a-423a-83c9-6cf7e061f604"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accountAppSeq}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="115" y="0" width="36" height="18" isPrintWhenDetailOverflows="true" uuid="aaec24a2-bb0c-4e29-8979-39220c2511cc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{channel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="0" width="108" height="18" isPrintWhenDetailOverflows="true" uuid="58f0bc5b-4bcd-4110-aa9c-e24b68f50d02"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{applicationDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="261" y="0" width="110" height="18" isPrintWhenDetailOverflows="true" uuid="01968641-671d-40e7-8671-04494b817cfa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="10" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="372" y="0" width="109" height="18" isPrintWhenDetailOverflows="true" uuid="83f62e20-68b4-45e3-85f8-ff1e90398897"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="0" width="108" height="18" isPrintWhenDetailOverflows="true" uuid="5c2fd4ca-a591-4fa5-a0cb-f7e822f5b760"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kanaLastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="592" y="0" width="109" height="18" isPrintWhenDetailOverflows="true" uuid="03ab57b4-b336-4e0d-9223-f2d41e2fb108"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kanaFirstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="702" y="0" width="79" height="18" isPrintWhenDetailOverflows="true" uuid="7e3d071f-815c-4741-a864-9b642aa9e17e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birthday}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="782" y="0" width="31" height="18" isPrintWhenDetailOverflows="true" uuid="e57c8edf-64db-4a57-adaa-2f30bc2ac371"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="814" y="0" width="18" height="18" isPrintWhenDetailOverflows="true" uuid="5bb522a6-cdb6-4cb7-a555-53e5e1c6d2f6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sex}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="833" y="0" width="40" height="18" isPrintWhenDetailOverflows="true" uuid="0c41fb1f-3403-42eb-969a-12dd0508ce1f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{postCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="874" y="0" width="31" height="18" isPrintWhenDetailOverflows="true" uuid="aace966e-c859-4da2-b315-4ae922f1720e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prefectures}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="906" y="0" width="151" height="18" isPrintWhenDetailOverflows="true" uuid="c6d0fd74-f4ac-4a8a-b3d9-181cd3aecba5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address01}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1058" y="0" width="175" height="18" isPrintWhenDetailOverflows="true" uuid="a59b6bf8-cd00-437b-b666-4e384b305c8d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address02}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1234" y="0" width="207" height="18" isPrintWhenDetailOverflows="true" uuid="57862eb3-7ad4-4401-a85d-f6c74d654a30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kanaAddress1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1442" y="0" width="208" height="18" isPrintWhenDetailOverflows="true" uuid="7e047f87-1e79-476b-ada5-2c9ec99296e4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kanaAddress2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1651" y="0" width="77" height="18" isPrintWhenDetailOverflows="true" uuid="2e99c94f-de33-4f03-bc86-54875d180ed1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{teleNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1729" y="0" width="75" height="18" isPrintWhenDetailOverflows="true" uuid="fec42fe4-b7d7-4ca3-925b-3c530b8c55a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{phoneNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1805" y="0" width="141" height="18" isPrintWhenDetailOverflows="true" uuid="7db162b6-6c9d-4ab0-8e11-36e109d8268d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1947" y="0" width="106" height="18" isPrintWhenDetailOverflows="true" uuid="5ba9c6e1-95ba-4134-bfde-8a71db0dd66c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cardType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2054" y="0" width="91" height="18" isPrintWhenDetailOverflows="true" uuid="302c57f8-a2ba-4cb8-97c8-2d6d37101864"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noApplicationService1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2146" y="0" width="100" height="18" isPrintWhenDetailOverflows="true" uuid="26e96317-98aa-4378-bf3f-23242598812b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noApplicationService2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2247" y="0" width="43" height="18" isPrintWhenDetailOverflows="true" uuid="fe01f018-7857-4d5d-8522-9d85c28f760e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tradingPurposes1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2291" y="0" width="47" height="18" isPrintWhenDetailOverflows="true" uuid="588f450c-a62c-438a-b22e-27b5a6c2d647"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tradingPurposes2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2339" y="0" width="47" height="18" isPrintWhenDetailOverflows="true" uuid="73dc8fb5-4bdb-437c-8a3d-06cae14ae1f2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tradingPurposes3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2387" y="0" width="61" height="18" isPrintWhenDetailOverflows="true" uuid="a8b24c90-04cf-4f3e-9f13-46e4b795263a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tradingPurposes4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2449" y="0" width="45" height="18" isPrintWhenDetailOverflows="true" uuid="080eb5d0-82e4-49a5-9a02-98bdd32ce389"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tradingPurposes5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2495" y="0" width="24" height="18" isPrintWhenDetailOverflows="true" uuid="061ba5ad-1601-4adf-a974-ebfacfadf7bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tradingPurposes6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2520" y="0" width="24" height="18" isPrintWhenDetailOverflows="true" uuid="a7ab7449-be04-4b7d-98a2-3a677d624186"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tradingPurposes7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2545" y="0" width="24" height="18" isPrintWhenDetailOverflows="true" uuid="0106e65e-01f7-4c96-b448-9ff791780180"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tradingPurposes8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2570" y="0" width="46" height="18" isPrintWhenDetailOverflows="true" uuid="af34a552-7b67-4f02-90ac-84a7d6061be6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tradingPurposes9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2617" y="0" width="138" height="18" isPrintWhenDetailOverflows="true" uuid="acff5e5d-4020-44ec-a651-453b798540f3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tradingPurposes10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2756" y="0" width="74" height="18" isPrintWhenDetailOverflows="true" uuid="d3b2fa15-9474-44ac-92c0-57f2d0ce2157"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{occupation1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2831" y="0" width="72" height="18" isPrintWhenDetailOverflows="true" uuid="20b0117c-3406-4018-9cd8-0c59c79e394e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{occupation2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2904" y="0" width="73" height="18" isPrintWhenDetailOverflows="true" uuid="aca86f5f-5e69-4481-9805-a12026ad45d5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{occupation3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2978" y="0" width="74" height="18" isPrintWhenDetailOverflows="true" uuid="7dc7b85b-fdfc-4eb4-9787-83aaae4e193b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{occupation4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3053" y="0" width="128" height="18" isPrintWhenDetailOverflows="true" uuid="327cd4e2-b3ff-4c19-9b4a-83740e78900c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{occupation5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3182" y="0" width="73" height="18" isPrintWhenDetailOverflows="true" uuid="07770b3d-f3e9-486a-9652-4a9f5b385599"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{occupation6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3256" y="0" width="73" height="18" isPrintWhenDetailOverflows="true" uuid="d7d2b085-b887-488f-bead-08bc9dafb199"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{occupation7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3330" y="0" width="73" height="18" isPrintWhenDetailOverflows="true" uuid="c71aebb1-9219-4521-b053-800a0d56b040"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{occupation8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3404" y="0" width="51" height="18" isPrintWhenDetailOverflows="true" uuid="be61d816-cfab-4c2c-8312-d272d3ab7608"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{occupation9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3456" y="0" width="41" height="18" isPrintWhenDetailOverflows="true" uuid="f0079522-9e7c-4c88-8241-f76ba511a107"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{occupation10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3498" y="0" width="37" height="18" isPrintWhenDetailOverflows="true" uuid="abe9059c-a3e8-47bc-aa4b-437c31a89820"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{occupation11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3536" y="0" width="74" height="18" isPrintWhenDetailOverflows="true" uuid="7c5d548e-4306-4695-9aba-1815a12cd536"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{occupation12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3611" y="0" width="73" height="18" isPrintWhenDetailOverflows="true" uuid="1bfcfeff-03ed-41f4-9ae2-bed61a75e9b8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{occupation13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3685" y="0" width="52" height="18" isPrintWhenDetailOverflows="true" uuid="5fa057dc-3d37-4124-8761-c38883ecca77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{holdAccountBankNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3738" y="0" width="52" height="18" isPrintWhenDetailOverflows="true" uuid="d7b455c7-8686-4009-b8a2-e954376713da"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accountDeposit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3791" y="0" width="51" height="18" isPrintWhenDetailOverflows="true" uuid="62b29c97-f626-4f87-aeec-c9b70b26b0ff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{holdAccountNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3843" y="0" width="53" height="18" isPrintWhenDetailOverflows="true" uuid="9b3a9046-cb9c-4227-85f1-adeea61d8feb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{holdAccountNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3897" y="0" width="62" height="18" isPrintWhenDetailOverflows="true" uuid="d17028f5-33a2-4aee-b9f7-765ca81bb3bd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{directServicesContractBankNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3960" y="0" width="63" height="18" isPrintWhenDetailOverflows="true" uuid="da74e2c5-135e-4985-b282-71956157cc90"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{directServicesContractAccountNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4024" y="0" width="144" height="18" isPrintWhenDetailOverflows="true" uuid="1b8cfe13-a0ba-4b88-8dcd-e54d65944e91"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accountAppMotive}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4169" y="0" width="118" height="18" isPrintWhenDetailOverflows="true" uuid="e972ffed-f348-43f3-a503-8fd3fe4a362e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{knowProcess}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4288" y="0" width="38" height="18" isPrintWhenDetailOverflows="true" uuid="f4c20c09-c927-42ae-9f8e-53285a1909d5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telRegisterPerTrans}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4327" y="0" width="37" height="18" isPrintWhenDetailOverflows="true" uuid="3bb4cb94-fcd7-464e-919e-072fe0ed412b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telRegisterPerDay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4365" y="0" width="36" height="18" isPrintWhenDetailOverflows="true" uuid="af98122e-0f14-42f3-816d-52a261ba0c30"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telOncePerTrans}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4402" y="0" width="37" height="18" isPrintWhenDetailOverflows="true" uuid="05f49e25-a85a-46d7-87af-4e7304332b93"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telOncePerDay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4440" y="0" width="38" height="18" isPrintWhenDetailOverflows="true" uuid="824e1ec7-58a9-414d-9f29-9d79e50d82f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{internetRegisterPerTrans}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4479" y="0" width="37" height="18" isPrintWhenDetailOverflows="true" uuid="5337e09d-a15e-474a-8975-39ad94ef9582"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{internetRegisterPerDay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4517" y="0" width="37" height="18" isPrintWhenDetailOverflows="true" uuid="6582e5d1-a465-4d20-906a-e0e68e379409"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{internetOncePerTrans}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4555" y="0" width="37" height="18" isPrintWhenDetailOverflows="true" uuid="0d84d1dd-5319-418d-9bb7-ae53dab8dd50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{internetOncePerDay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4593" y="0" width="72" height="18" isPrintWhenDetailOverflows="true" uuid="eaa4017b-27dd-470f-b4c9-dbd57897fbd3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{securityPassword}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4666" y="0" width="89" height="18" isPrintWhenDetailOverflows="true" uuid="f232ddb0-98e9-4db9-bab6-e516d838f67c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{directServicesCardPassword}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="591" y="0" width="1" height="18" uuid="03892d2c-8551-49ba-a0f9-b33695df0a15"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="701" y="0" width="1" height="18" uuid="b3e33494-256f-4012-b2e7-3f2be9b1d34a"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="781" y="0" width="1" height="18" uuid="e0cea1d1-a46f-4360-8a9b-d80f66988bac"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="813" y="0" width="1" height="18" uuid="98c4f3be-b309-4773-bd99-cf696bad96cb"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="832" y="0" width="1" height="18" uuid="febabb3b-0518-47f2-9a21-d428abf4278e"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="873" y="0" width="1" height="18" uuid="3e5c0d3b-e344-46bb-9c6e-9dc02a163914"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="905" y="0" width="1" height="18" uuid="adeec923-332b-4c98-9255-f934036d54fe"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1057" y="0" width="1" height="18" uuid="de68f96f-ca40-49a4-a8d5-e1233b56a197"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1233" y="0" width="1" height="18" uuid="7fb60abf-6cda-4073-a12c-ef74608bab19"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1441" y="0" width="1" height="18" uuid="2a0374c6-ef02-415a-b424-cb4ace760ae3"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1650" y="0" width="1" height="18" uuid="2d484e04-fd87-422c-bc6c-c23386bb9ac1"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1728" y="0" width="1" height="18" uuid="6435e0a2-cc94-4598-973f-e3f9b04b9cd3"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1804" y="0" width="1" height="18" uuid="64efb72f-55f9-4560-b15d-13bd416a6b38"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1946" y="0" width="1" height="18" uuid="0398022d-fdaa-48be-a01c-8d9e2674af1e"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2053" y="0" width="1" height="18" uuid="f85d5014-e848-4187-8282-5397943794b8"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2145" y="0" width="1" height="18" uuid="b97d8e91-0f0a-458b-84ba-1105d46ec2fa"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2246" y="0" width="1" height="18" uuid="1b943589-1f2b-42f8-b18f-35506e208be5"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2290" y="0" width="1" height="18" uuid="5f3934dc-c0a7-4d02-aced-fee36c4d4605"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2338" y="0" width="1" height="18" uuid="6cf37e60-36f3-4df9-93a6-a564b6a59c00"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2386" y="0" width="1" height="18" uuid="f695bf17-da76-4807-84ae-ad99f4a71416"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2448" y="0" width="1" height="18" uuid="251ace4d-8d52-4f6f-8790-8fb7778a7e83"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2494" y="0" width="1" height="18" uuid="3857d5c4-eee8-44e1-ac02-bf130d69d455"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2519" y="0" width="1" height="18" uuid="5697c380-9cf3-4c26-ad71-42d168901424"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2544" y="0" width="1" height="18" uuid="caf72995-b74e-4610-98a9-a3b7796e7da0"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2569" y="0" width="1" height="18" uuid="7da4d0e3-6463-4b9b-8500-4148aee2ee92"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2616" y="0" width="1" height="18" uuid="b9f7a465-fdd2-49cd-8ef3-3402c794eef1"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2755" y="0" width="1" height="18" uuid="86fcdf94-b0d3-4648-b8f9-4f93a4e73aa0"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2830" y="0" width="1" height="18" uuid="66b9d7d2-9e14-4d16-bc49-b58b18830a52"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2903" y="0" width="1" height="18" uuid="58ea1df4-56e2-4e50-8d48-71e0f0c12b71"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="2977" y="0" width="1" height="18" uuid="d00d1306-8492-4c9f-963a-537c80732aeb"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3052" y="0" width="1" height="18" uuid="8d768bb7-2b80-4159-a299-21c3e3d45652"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3181" y="0" width="1" height="18" uuid="7e790913-1b46-4d7c-9275-a427b7e8312a"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3255" y="0" width="1" height="18" uuid="5e2dca85-d76e-4d0b-a058-421f40b493ae"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3329" y="0" width="1" height="18" uuid="1fa07e2e-50fa-4137-8786-fe16a6b94f60"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3403" y="0" width="1" height="18" uuid="b177016c-08ac-417d-aac3-5f94258bb452"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3455" y="0" width="1" height="18" uuid="ca478562-ad02-4a65-8483-6a51bd0f9c45"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3497" y="0" width="1" height="18" uuid="260afb2a-feb0-4462-bf94-964e889b9903"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3535" y="0" width="1" height="18" uuid="f2e6d565-6c7e-4954-8947-07c888d87f3d"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3610" y="0" width="1" height="18" uuid="3a5bb7b9-b058-4f31-8a1a-49cccafd1510"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3684" y="0" width="1" height="18" uuid="2352bb8e-3e9f-44f7-bc12-4b78477b5677"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3737" y="0" width="1" height="18" uuid="ed18a0ad-8abd-424b-a70e-0b358840efd6"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3790" y="0" width="1" height="18" uuid="70985dba-a447-4c31-adba-9843510a3559"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3842" y="0" width="1" height="18" uuid="ed78d20f-a63d-4d6a-b033-16835852ade6"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3896" y="0" width="1" height="18" uuid="b143c22b-ae61-4c7c-91dd-d19372caa0d0"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="3959" y="0" width="1" height="18" uuid="7aa6535e-7399-44bf-8f0e-f0db5fb8a461"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4023" y="0" width="1" height="18" uuid="3f3a9384-8040-4d75-bc37-5e5fd6ea47f0"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4168" y="0" width="1" height="18" uuid="2b2b158b-3947-488a-b7fb-95e02041c26f"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4287" y="0" width="1" height="18" uuid="86564a4b-de26-469e-954c-8aca00aba1d0"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4326" y="0" width="1" height="18" uuid="d5f02697-7a0c-416c-a67c-1542cf9d563c"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4364" y="0" width="1" height="18" uuid="ddf3ca58-9463-4f0a-8e04-1105fbee2bec"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4401" y="0" width="1" height="18" uuid="7f4379f9-58c0-4b23-b395-bfb3b998b670"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4439" y="0" width="1" height="18" uuid="62373317-bab1-4ad6-9d3f-c5907e1f8852"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4478" y="0" width="1" height="18" uuid="fd6e17f6-6c10-4e04-9a24-5081647c2bcb"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4516" y="0" width="1" height="18" uuid="f8812f93-5cc8-48df-aa67-53f543c6e1e2"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4554" y="0" width="1" height="18" uuid="6286bd39-4563-4011-a4a8-867475b2ca9f"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4592" y="0" width="1" height="18" uuid="633e9bf1-45ec-4160-9c81-ea6910144986"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4665" y="0" width="1" height="18" uuid="9ed46c43-c6ce-4632-8b14-33556483baa3"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

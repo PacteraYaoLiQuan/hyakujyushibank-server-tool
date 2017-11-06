@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="500" pageHeight="595" orientation="Landscape" columnWidth="460" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d4ee8f85-2196-457d-bf52-f5ab5dad3c8f">
+	<property name="ireport.zoom" value="2.4200000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="accountAppSeq" class="java.lang.String"/>
+	<field name="message" class="java.lang.String"/>
+	<title>
+		<band height="30">
+			<staticText>
+				<reportElement x="0" y="0" width="239" height="13" uuid="db97f43f-febd-45a4-8ab3-e270b6ab3c69"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="9" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[口座申込失敗データのエラー情報]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="1" y="13" width="447" height="17" backcolor="#99CCFF" uuid="df0507fd-375f-47af-81e2-2a62e54c85d9"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="13" width="113" height="17" uuid="9312cabd-f1ef-4f53-85e1-3f0814088b50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[受付番号]]></text>
+			</staticText>
+			<line>
+				<reportElement x="114" y="13" width="1" height="17" uuid="2b17b650-d19a-4f0b-bb0d-88dcfd05cb9a"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="115" y="13" width="333" height="17" uuid="10d2401a-f3fd-44b5-b3df-7fbb1b527b3c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[エラー内容]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="18" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="0" width="447" height="18" uuid="5de196ff-98da-445c-b9e7-f6c9aa8527b0"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="114" y="0" width="1" height="18" uuid="6d6d0db4-9dae-42a3-8c5d-1e192724bf6d"/>
+				<graphicElement>
+					<pen lineWidth="0.75"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="1" y="0" width="113" height="18" isPrintWhenDetailOverflows="true" uuid="cef4b672-887a-423a-83c9-6cf7e061f604"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accountAppSeq}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="115" y="0" width="333" height="18" isPrintWhenDetailOverflows="true" uuid="aaec24a2-bb0c-4e29-8979-39220c2511cc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{message}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

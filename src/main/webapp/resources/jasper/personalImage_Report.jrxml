@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report13" language="groovy" pageWidth="655" pageHeight="842" columnWidth="615" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="073bb47d-36bd-4695-870b-968732bc7e94">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="144"/>
+	<field name="url1" class="java.lang.String"/>
+	<field name="url2" class="java.lang.String"/>
+	<field name="accountAppSeq" class="java.lang.String"/>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="44" width="615" height="358" uuid="e6d8711d-b334-4f42-811e-09169a8da2c4"/>
+				<imageExpression><![CDATA[$F{url1}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="426" width="615" height="358" uuid="c1535260-71b6-411e-9f26-6206a6dbe350"/>
+				<imageExpression><![CDATA[$F{url2}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="12" width="97" height="25" uuid="f191ea56-c571-41d0-842d-5fa412a909b8"/>
+				<textElement>
+					<font fontName="ＭＳ ゴシック" size="14" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[受付番号:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="97" y="12" width="256" height="25" uuid="91b84b64-f8a5-409e-86c6-3dca44002c39"/>
+				<textElement>
+					<font fontName="ＭＳ ゴシック" size="14" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accountAppSeq}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

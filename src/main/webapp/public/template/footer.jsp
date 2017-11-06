@@ -1,0 +1,1 @@
+<footer id="footer" data-ng-include="'template/footer.html'"></footer>
