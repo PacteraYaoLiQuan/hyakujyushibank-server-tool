@@ -12,14 +12,12 @@ import com.scsk.exception.BusinessException;
 import com.scsk.model.AccountLoanDoc;
 import com.scsk.request.vo.AccountAppDetailReqVO;
 import com.scsk.request.vo.YamagataStatusModifyReqVO;
-import com.scsk.response.vo.AccountAppYamaGataDetailResVO;
 import com.scsk.response.vo.AccountLoan114DetailResVO;
 import com.scsk.response.vo.BaseResVO;
 import com.scsk.response.vo.YamagataStatusModifyResVO;
 import com.scsk.util.ActionLog;
 import com.scsk.util.EncryptorUtil;
 import com.scsk.util.LogInfoUtil;
-import com.scsk.util.PhoneNumberUtil;
 import com.scsk.util.ResultMessages;
 import com.scsk.util.Utils;
 
@@ -92,93 +90,52 @@ public class AccountLoanDetailSelService extends AbstractBLogic<BaseResVO, BaseR
 
         // ユーザーID
         applicationDetailResVO.setUserId(accountLoanDoc.getUserId());
+        applicationDetailResVO.setDocType(accountLoanDoc.getDocType());
         // ユーザータイプ
         applicationDetailResVO.setUserType(accountLoanDoc.getUserType());
         // 受付番号
-        applicationDetailResVO.setAccountAppSeq(accountLoanDoc.getLoanAppSeq());
-        // ローン種類
-        applicationDetailResVO.setLoanType(accountLoanDoc.getLoanType());
-        // カードローン申し込み済フラグ(0：OFF、1：ON)
-        applicationDetailResVO.setReLoadInfoFlg(accountLoanDoc.getReLoadInfoFlg());
-        // 同意フラグ(0：同意しない、1：同意する)
-        applicationDetailResVO.setAgreeFlg(accountLoanDoc.getAgreeFlg());
-        // お借入限度額
-        // お借入限度額
-        if ("0".equals(accountLoanDoc.getLimitMoney())) {
-            applicationDetailResVO.setLimitMoney("30万円");
-        } else if ("1".equals(accountLoanDoc.getLimitMoney())) {
-            applicationDetailResVO.setLimitMoney("50万円");
-        } else if ("2".equals(accountLoanDoc.getLimitMoney())) {
-            applicationDetailResVO.setLimitMoney("100万円");
-        } else if ("3".equals(accountLoanDoc.getLimitMoney())) {
-            applicationDetailResVO.setLimitMoney("200万円");
-        } else if ("4".equals(accountLoanDoc.getLimitMoney())) {
-            applicationDetailResVO.setLimitMoney("300万円");
-        } else if ("5".equals(accountLoanDoc.getLimitMoney())) {
-            applicationDetailResVO.setLimitMoney("400万円");
-        } else if ("6".equals(accountLoanDoc.getLimitMoney())) {
-            applicationDetailResVO.setLimitMoney("500万円");
-        }
-        // ダイレクトメール
-        applicationDetailResVO.setDairekutoMail(accountLoanDoc.getDairekutoMail());
+//        applicationDetailResVO.setAccountAppSeq();
+        applicationDetailResVO.setLoanAppSeq(accountLoanDoc.getLoanAppSeq());
         applicationDetailResVO.setLoanAppTime(accountLoanDoc.getLoanAppTime());
-        // 運転免許証画像の受付番号
+        applicationDetailResVO.setStatus(accountLoanDoc.getStatus());
+        applicationDetailResVO.setLoanType(accountLoanDoc.getLoanType());
+        applicationDetailResVO.setReLoadInfoFlg(accountLoanDoc.getReLoadInfoFlg());
+        applicationDetailResVO.setAgreeTime(accountLoanDoc.getAgreeTime());
+        applicationDetailResVO.setAgreeCheck(accountLoanDoc.getAgreeCheck());
+        applicationDetailResVO.setLimitMoney(accountLoanDoc.getLimitMoney());
+        applicationDetailResVO.setDairekutoMail(accountLoanDoc.getDairekutoMail());
         applicationDetailResVO.setDriverLicenseSeq(accountLoanDoc.getDriverLicenseSeq());
-        if ("0".equals(accountLoanDoc.getLoanType())) {
-            applicationDetailResVO.setLoanType("ニューカードローン");
-            applicationDetailResVO.setLoanFlag("0");
-        } else if ("1".equals(accountLoanDoc.getLoanType())) {
-            applicationDetailResVO.setLoanType("マイカーローン");
-            applicationDetailResVO.setLoanFlag("1");
-        } else if ("2".equals(accountLoanDoc.getLoanType())) {
-            applicationDetailResVO.setLoanType("教育ローン");
-            applicationDetailResVO.setLoanFlag("1");
-        } else if ("3".equals(accountLoanDoc.getLoanType())) {
-            applicationDetailResVO.setLoanType("フリーローン");
-            applicationDetailResVO.setLoanFlag("1");
-        }
-
-        applicationDetailResVO.setName(encryptorUtil.decrypt(accountLoanDoc.getFirstName())
-                + encryptorUtil.decrypt(accountLoanDoc.getLastName()));
-        // ガナ姓名
-        applicationDetailResVO.setKanaName(encryptorUtil.decrypt(accountLoanDoc.getFirstKanaName())
-                + encryptorUtil.decrypt(accountLoanDoc.getLastKanaName()));
-        // // お名前_フリガナの名
-        // applicationDetailResVO.setFirstKanaName(encryptorUtil.decrypt(accountLoanDoc.getFirstKanaName()));
-        // // お名前_フリガナの姓
-        // applicationDetailResVO.setLastKanaName(encryptorUtil.decrypt(accountLoanDoc.getLastKanaName()));
+        applicationDetailResVO.setReadDriverLicenseNo(accountLoanDoc.getDriverLicenseNo());
+        applicationDetailResVO.setReadFirstName(accountLoanDoc.getReadFirstName());
+        applicationDetailResVO.setReadLastName(accountLoanDoc.getReadLastName());
+        applicationDetailResVO.setReadBirthDay(accountLoanDoc.getReadBirthDay());
+        applicationDetailResVO.setDriverLicenseSeq(accountLoanDoc.getDriverLicenseSeq());
+        applicationDetailResVO.setLoanType(accountLoanDoc.getLoanType());
+        applicationDetailResVO.setLastName(encryptorUtil.decrypt(accountLoanDoc.getLastName()));
+        applicationDetailResVO.setFirstName(encryptorUtil.decrypt(accountLoanDoc.getFirstName()));
+        applicationDetailResVO.setLastKanaName(encryptorUtil.decrypt(accountLoanDoc.getLastKanaName()));
+        applicationDetailResVO.setFirstKanaName(encryptorUtil.decrypt(accountLoanDoc.getFirstKanaName()));
+        applicationDetailResVO.setBirthday(encryptorUtil.decrypt(accountLoanDoc.getBirthday()));
         // 和暦年号
         applicationDetailResVO.setYearType(accountLoanDoc.getYearType());
         // 和暦生年月日
-        String eraDate = "";
-        String day = encryptorUtil.decrypt(accountLoanDoc.getEraBirthday());
-        eraDate = day.substring(0, 2) + "年" + day.substring(2, 4) + "月" + day.substring(4, 6) + "日";
-        applicationDetailResVO.setEraBirthday(eraDate);
-
+        applicationDetailResVO.setEraBirthday(encryptorUtil.decrypt(accountLoanDoc.getEraBirthday()));
         // 生年月日
         applicationDetailResVO.setBirthday(encryptorUtil.decrypt(accountLoanDoc.getBirthday()));
-        String sexKbn = "";
-        if ("1".equals(accountLoanDoc.getSexKbn())) {
-            sexKbn = "男";
-        } else {
-            sexKbn = "女";
-        }
-        applicationDetailResVO.setSexKbn(sexKbn);
+        applicationDetailResVO.setSexKbn(accountLoanDoc.getSexKbn());
         // 年齢
         applicationDetailResVO.setAge(accountLoanDoc.getAge());
         // 国籍
         applicationDetailResVO.setCountry(accountLoanDoc.getCountry());
-        String country = "";
-        if (!"1".equals(accountLoanDoc.getCountry())) {
-            country = "日本国籍以外";
-        } else {
-            country = "日本";
-        }
-        applicationDetailResVO.setCountry(country);
+        applicationDetailResVO.setCountry(accountLoanDoc.getCountry());
         // 運転免許番号フラグ
         applicationDetailResVO.setDriverLicenseFlg(accountLoanDoc.getDriverLicenseFlg());
         // 運転免許番号
         applicationDetailResVO.setDriverLicenseNo(encryptorUtil.decrypt(accountLoanDoc.getDriverLicenseNo()));
+        applicationDetailResVO.setReadPostCode(accountLoanDoc.getReadPostCode());
+        applicationDetailResVO.setReadPrefecturesCode(accountLoanDoc.getReadPrefecturesCode());
+        applicationDetailResVO.setReadAddress(accountLoanDoc.getReadAddress());
+        applicationDetailResVO.setReadOtherAddress(accountLoanDoc.getReadOtherAddress());
         // 郵便番号
         applicationDetailResVO.setPostCode(encryptorUtil.decrypt(accountLoanDoc.getPostCode()));
         // ご自宅住所_都道府県
@@ -202,13 +159,7 @@ public class AccountLoanDetailSelService extends AbstractBLogic<BaseResVO, BaseR
         // ご家族_配偶者
         applicationDetailResVO.setSpouse(accountLoanDoc.getSpouse());
         // ご家族_居住形態
-
-        if ("1".equals(accountLoanDoc.getLiveType())) {
-            applicationDetailResVO.setLiveType("同居");
-        } else if ("2".equals(accountLoanDoc.getLiveType())) {
-            applicationDetailResVO.setLiveType("別居");
-        }
-
+        applicationDetailResVO.setLiveType(accountLoanDoc.getLiveType());
         // ご家族_扶養家族（人）
         applicationDetailResVO.setFamilyNumber(encryptorUtil.decrypt(accountLoanDoc.getFamilyNumber()));
         // 承知フラグ
@@ -240,7 +191,7 @@ public class AccountLoanDetailSelService extends AbstractBLogic<BaseResVO, BaseR
         // 所得区分
         applicationDetailResVO.setGetKbn(encryptorUtil.decrypt(accountLoanDoc.getGetKbn()));
         // 事業内容
-        applicationDetailResVO.setJobContent(accountLoanDoc.getJobContent());
+//        applicationDetailResVO.setJobContent(accountLoanDoc.getJobContent());
         // 役職
         applicationDetailResVO.setPosition(accountLoanDoc.getPosition());
         // 従業員数
@@ -292,19 +243,7 @@ public class AccountLoanDetailSelService extends AbstractBLogic<BaseResVO, BaseR
         // お勤め先の種類
         applicationDetailResVO.setWorkTypeCode(accountLoanDoc.getWorkTypeCode());
         // 資本金
-        if ("1".equals(accountLoanDoc.getMoney())) {
-            applicationDetailResVO.setMoney("1千万円未満");
-        } else if ("2".equals(accountLoanDoc.getMoney())) {
-            applicationDetailResVO.setMoney("1千万円以上");
-        } else if ("3".equals(accountLoanDoc.getMoney())) {
-            applicationDetailResVO.setMoney("3千万円以上");
-        } else if ("4".equals(accountLoanDoc.getMoney())) {
-            applicationDetailResVO.setMoney("5千万円以上");
-        } else if ("5".equals(accountLoanDoc.getMoney())) {
-            applicationDetailResVO.setMoney("1億円以上");
-        } else if ("6".equals(accountLoanDoc.getMoney())) {
-            applicationDetailResVO.setMoney("5億円以上");
-        }
+        applicationDetailResVO.setMoney(accountLoanDoc.getMoney());
         // 住宅ローン契約（当行）
         applicationDetailResVO.setRentLoanContract(accountLoanDoc.getRentLoanContract());
         // 本社所在地
@@ -313,12 +252,7 @@ public class AccountLoanDetailSelService extends AbstractBLogic<BaseResVO, BaseR
         applicationDetailResVO.setHealthType(accountLoanDoc.getHealthType());
         // お申込金額_万円
         applicationDetailResVO.setApplicationMoney(encryptorUtil.decrypt(accountLoanDoc.getApplicationMoney()));
-        // お借入希望日_[平成] 年
-        applicationDetailResVO.setGetHopeYearType(encryptorUtil.decrypt(accountLoanDoc.getGetHopeYearType()));
-        // お借入希望日_月
-        applicationDetailResVO.setGetHopeMonth(encryptorUtil.decrypt(accountLoanDoc.getGetHopeMonth()));
-        // お借入希望日_日
-        applicationDetailResVO.setGetHopeDay(encryptorUtil.decrypt(accountLoanDoc.getGetHopeDay()));
+        applicationDetailResVO.setGetHopeDate(encryptorUtil.decrypt(accountLoanDoc.getGetHopeDate()));
         // 毎月返済希望額_円
         applicationDetailResVO.setReturnHopeMonth(encryptorUtil.decrypt(accountLoanDoc.getReturnHopeMonth()));
         // 返済希望回数_回
@@ -327,31 +261,8 @@ public class AccountLoanDetailSelService extends AbstractBLogic<BaseResVO, BaseR
         applicationDetailResVO.setInCount(encryptorUtil.decrypt(accountLoanDoc.getInCount()));
         // ご利用目的フラグ
         applicationDetailResVO.setPurposeFlg(accountLoanDoc.getPurposeFlg());
-
-        if ("1".equals(accountLoanDoc.getPurposeFlg())) {
-            accountLoanDoc.setOtherPurpose("生活費");
-        } else if ("2".equals(accountLoanDoc.getPurposeFlg())) {
-            accountLoanDoc.setOtherPurpose("飲食費・交際費");
-        } else if ("4".equals(accountLoanDoc.getPurposeFlg())) {
-            accountLoanDoc.setOtherPurpose("レジャー資金");
-        } else if ("5".equals(accountLoanDoc.getPurposeFlg())) {
-            accountLoanDoc.setOtherPurpose("冠婚葬祭費");
-        } else if ("6".equals(accountLoanDoc.getPurposeFlg())) {
-            accountLoanDoc.setOtherPurpose("入院・治療費");
-        } else if ("7".equals(accountLoanDoc.getPurposeFlg())) {
-            accountLoanDoc.setOtherPurpose("教育資金");
-        } else if ("8".equals(accountLoanDoc.getPurposeFlg())) {
-            accountLoanDoc.setOtherPurpose("借入金返済資金");
-        } else if ("9".equals(accountLoanDoc.getPurposeFlg())) {
-            accountLoanDoc.setOtherPurpose("車の購入");
-        } else {
-            accountLoanDoc.setOtherPurpose(accountLoanDoc.getOtherPurpose());
-        }
-        // ご利用目的_目的
-        if (!"0".equals(accountLoanDoc.getLoanType())) {
-            applicationDetailResVO.setOtherPurpose(encryptorUtil.decrypt(accountLoanDoc.getPurpose()));
-        }
-        applicationDetailResVO.setStatus(accountLoanDoc.getStatus());
+        applicationDetailResVO.setOtherPurpose(accountLoanDoc.getOtherPurpose());
+        applicationDetailResVO.setOtherPurpose(encryptorUtil.decrypt(accountLoanDoc.getPurpose()));
         // ご利用目的_所要資金総額（万円）
         applicationDetailResVO.setMoneyTotal(encryptorUtil.decrypt(accountLoanDoc.getMoneyTotal()));
         // ご利用目的_お支払先（ご購入先）①
@@ -373,11 +284,7 @@ public class AccountLoanDetailSelService extends AbstractBLogic<BaseResVO, BaseR
         // 口座番号（普通）
         applicationDetailResVO.setAccountNumber(encryptorUtil.decrypt(accountLoanDoc.getAccountNumber()));
         // 返済併用フラグ
-        if ("1".equals(accountLoanDoc.getIncreaseFlg())) {
-            applicationDetailResVO.setIncreaseFlg("はい");
-        } else {
-            applicationDetailResVO.setIncreaseFlg("いいえ");
-        }
+        applicationDetailResVO.setIncreaseFlg(accountLoanDoc.getIncreaseFlg());
         // 返済日
         applicationDetailResVO.setReturnDay(encryptorUtil.decrypt(accountLoanDoc.getReturnDay()));
         // 返済開始日
@@ -416,26 +323,32 @@ public class AccountLoanDetailSelService extends AbstractBLogic<BaseResVO, BaseR
         applicationDetailResVO.setOtherComRest(encryptorUtil.decrypt(accountLoanDoc.getOtherComRest()));
         // [信販会社等その他] 年間返済額（万円）
         applicationDetailResVO.setOtherComReturnMoney(encryptorUtil.decrypt(accountLoanDoc.getOtherComReturnMoney()));
+        // [信販会社等その他] 残高（万円）
+        applicationDetailResVO.setOtherComRest2(encryptorUtil.decrypt(accountLoanDoc.getOtherComRest2()));
+        // [信販会社等その他] 年間返済額（万円）
+        applicationDetailResVO.setOtherComReturnMoney2(encryptorUtil.decrypt(accountLoanDoc.getOtherComReturnMoney2()));
+        // [信販会社等その他] 残高（万円）
+        applicationDetailResVO.setOtherComRest3(encryptorUtil.decrypt(accountLoanDoc.getOtherComRest3()));
+        // [信販会社等その他] 年間返済額（万円）
+        applicationDetailResVO.setOtherComReturnMoney3(encryptorUtil.decrypt(accountLoanDoc.getOtherComReturnMoney3()));
+        // [信販会社等その他] 残高（万円）
+        applicationDetailResVO.setOtherComRest4(encryptorUtil.decrypt(accountLoanDoc.getOtherComRest4()));
+        // [信販会社等その他] 年間返済額（万円）
+        applicationDetailResVO.setOtherComReturnMoney4(encryptorUtil.decrypt(accountLoanDoc.getOtherComReturnMoney4()));
+        // [信販会社等その他] 残高（万円）
+        applicationDetailResVO.setOtherComRest5(encryptorUtil.decrypt(accountLoanDoc.getOtherComRest5()));
+        // [信販会社等その他] 年間返済額（万円）
+        applicationDetailResVO.setOtherComReturnMoney5(encryptorUtil.decrypt(accountLoanDoc.getOtherComReturnMoney5()));
+        // [信販会社等その他] 残高（万円）
+        applicationDetailResVO.setOtherComRest6(encryptorUtil.decrypt(accountLoanDoc.getOtherComRest6()));
+        // [信販会社等その他] 年間返済額（万円）
+        applicationDetailResVO.setOtherComReturnMoney6(encryptorUtil.decrypt(accountLoanDoc.getOtherComReturnMoney6()));
         // お取引希望店
         applicationDetailResVO.setHopeStoreNmae(encryptorUtil.decrypt(accountLoanDoc.getHopeStoreNmae()));
         // お取引希望店フラグ
         applicationDetailResVO.setHopeStoreFlg(accountLoanDoc.getHopeStoreFlg());
         // 当行とのお取引
-        if ("1".equals(accountLoanDoc.getBankAccount())) {
-            applicationDetailResVO.setBankAccount("はい");
-        } else {
-            applicationDetailResVO.setBankAccount("いいえ");
-        }
-        if ("1".equals(accountLoanDoc.getOwnAccountKbn())) {
-            applicationDetailResVO.setOwnAccountKbn("はい");
-        } else {
-            applicationDetailResVO.setOwnAccountKbn("いいえ");
-        }
-        // 受付番号
-        applicationDetailResVO.setAccountAppSeq(accountLoanDoc.getLoanAppSeq());
-
-        // ステータス
-        applicationDetailResVO.setStatus(accountLoanDoc.getStatus());
+        applicationDetailResVO.setBankAccount(accountLoanDoc.getBankAccount());
         // push通知履歴一覧を取得
         YamagataStatusModifyReqVO yamagataStatusModifyReqVO = new YamagataStatusModifyReqVO();
         yamagataStatusModifyReqVO.setAccountAppSeq(accountLoanDoc.getLoanAppSeq());

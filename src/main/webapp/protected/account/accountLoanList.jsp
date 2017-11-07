@@ -168,65 +168,253 @@
 						<title>個人情報</title>
 					</div>
 				</div>
+
 				<div class="row detail-c-item">
 					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">氏名(漢字)</div>
+						<div class="text-item">ドキュメントタイプ</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-item">
-							<span>{{modalInstanceCtrl001.name}}</span>
+							<span>{{modalInstanceCtrl001.docType}}</span>
 						</div>
 					</div>
 					<div class="col-sm-2">
-						<div class="text-item">氏名(カタカナ)</div>
+						<div class="text-item">ユーザーID</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-item">
-							<span>{{modalInstanceCtrl001.kanaName}}</span>
+							<span>{{modalInstanceCtrl001.userId}}</span>
 						</div>
 					</div>
 				</div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">ユーザータイプ</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.userType}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">受付番号</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.loanAppSeq}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">受付日時</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.loanAppTime}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">ステイタス</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.status}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">ローン種類</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.loanType}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">カードローン申し込み済フラグ</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.reLoadInfoFlg}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">同意日時</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.agreeTime}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">同意チェックボックス</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.agreeCheck}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">お借入限度額</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.limitMoney}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">ダイレクトメール</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.dairekutoMail}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">運転免許証画像の受付番号</div>
+              <span>{{modalInstanceCtrl001.driverLicenseSeq}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">読取り運転免許証番号</div>
+              <span>{{modalInstanceCtrl001.readDriverLicenseNo}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">読取り名前の名(読取結果確認)</div>
+              <span>{{modalInstanceCtrl001.readFirstName}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">読取り名前の姓(読取結果確認)</div>
+              <span>{{modalInstanceCtrl001.readLastName}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">読取り生年月日</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.readBirthDay}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">お名前_漢字の名</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.firstName}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">お名前_漢字の姓</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.lastName}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">お名前_フリガナの名</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.firstKanaName}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">お名前_フリガナの姓</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.lastKanaName}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">生年月日</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.birthday}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">生年月日_和暦</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.yearType}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">和暦生年月日</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.eraBirthday}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">性別</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.sexKbn}}</span>
+            </div>
+          </div>
+        </div>
+
 				<div class="row detail-c-item">
 					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">生年月日</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.birthday}}</span>
-						</div>
-					</div>
-
-					<div class="col-sm-2">
-						<div class="text-item">性別</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.sexKbn}}</span>
-						</div>
-					</div>
-				</div>
-                <div class="row detail-c-item">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">和暦年号</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.ordinaryDepositEraKbn | ordinaryDepositEraKbnTitle}}</span>
-						</div>
-					</div>
-
-					<div class="col-sm-2">
-						<div class="text-item">和暦生年月日</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.eraBirthday}}</span>
-						</div>
-					</div>
-				</div>
-                <div class="row detail-c-item">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">年齢</div>
+						<div class="text-item">満年齢</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-item">
@@ -234,17 +422,6 @@
 						</div>
 					</div>
 					<div class="col-sm-2">
-						<div class="text-item">資本金</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.money}}</span>
-						</div>
-					</div>
-				</div>
-				
-				<div class="row detail-c-item" ng-hide="modalInstanceCtrl001.loanType0">
-					<div class="col-sm-2 col-sm-offset-1">
 						<div class="text-item">国籍</div>
 					</div>
 					<div class="col-sm-3">
@@ -252,107 +429,1122 @@
 							<span>{{modalInstanceCtrl001.country}}</span>
 						</div>
 					</div>
+				</div>
 
-					<div class="col-sm-2">
-						<div class="text-item">運転免許番号</div>
+        <div class="row detail-c-item">
+					<div class="col-sm-2 col-sm-offset-1">
+						<div class="text-item">運転免許番号フラグ</div>
+              <span>{{modalInstanceCtrl001.driverLicenseFlg}}</span>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-item">
-							<span>{{modalInstanceCtrl001.driverLicenseNo}}</span>
+
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="text-item">運転免許番号</div>
+              <span>{{modalInstanceCtrl001.driverLicenseNo}}</span>
+					</div>
+					<div class="col-sm-3">
+						<div class="text-item">
+
 						</div>
 					</div>
 				</div>
 
-				<div class="row detail-c-item" ng-hide="modalInstanceCtrl001.loanType0">
+        <div class="row detail-c-item">
 					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">居住形態</div>
+						<div class="text-item">読取り郵便番号</div>
+              <span>{{modalInstanceCtrl001.readPostCode}}</span>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-item">
-							<span>{{modalInstanceCtrl001.liveType}}</span>
+
 						</div>
 					</div>
-
 					<div class="col-sm-2">
-						<div class="text-item">扶養家族（人）</div>
+						<div class="text-item">読取り都道府県</div>
+              <span>{{modalInstanceCtrl001.readPrefecturesCode}}</span>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-item">
-							<span>{{modalInstanceCtrl001.familyNumber}}</span>
+
+						</div>
+					</div>
+				</div>
+				
+				<div class="row detail-c-item">
+					<div class="col-sm-2 col-sm-offset-1">
+						<div class="text-item">読取り住所</div>
+              <span>{{modalInstanceCtrl001.readAddress}}</span>
+					</div>
+					<div class="col-sm-3">
+						<div class="text-item">
+
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="text-item">読取り住所_以降ご住所</div>
+              <span>{{modalInstanceCtrl001.readOtherAddress}}</span>
+					</div>
+					<div class="col-sm-3">
+						<div class="text-item">
+
+						</div>
+					</div>
+				</div>
+
+				<div class="row detail-c-item">
+					<div class="col-sm-2 col-sm-offset-1">
+						<div class="text-item">郵便番号</div>
+              <span>{{modalInstanceCtrl001.postCode}}</span>
+					</div>
+					<div class="col-sm-3">
+						<div class="text-item">
+
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="text-item">ご自宅住所_都道府県</div>
+              <span>{{modalInstanceCtrl001.prefecturesCode}}</span>
+					</div>
+					<div class="col-sm-3">
+						<div class="text-item">
+
 						</div>
 					</div>
 				</div>	
 
 				<div class="row detail-c-item">
 					<div class="col-sm-2  col-sm-offset-1">
-						<div class="text-item">住所</div>
+						<div class="text-item">ご自宅住所_住所</div>
+               <span>{{modalInstanceCtrl001.address}}</span>
 					</div>
 					<div class="col-sm-8">
 						<div class="text-item">
-							<span>{{modalInstanceCtrl001.postCode}}</span><br /> 
-                            <span>{{modalInstanceCtrl001.prefecturesCode | prefecturesCodeTitle}}</span><br />
-                            <span>{{modalInstanceCtrl001.address}}</span>
-						</div>
-					</div>
-				</div>
-				<div class="row detail-c-item">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">電話番号</div>
-					</div>
-					<div class="col-sm-8">
-						<div class="text-item">
-							<span>自宅電話番号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>{{modalInstanceCtrl001.teleNumber}}</span><br />
-							<span>携帯電話番号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>{{modalInstanceCtrl001.phoneNumber}}</span><br />
-                           <span>勤務先電話番号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>{{modalInstanceCtrl001.workTeleNumber}}</span><br />
-						</div>
-					</div>
-				</div>
-                <div class="row detail-c-item">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">勤務先名</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.companyName}}</span>
-						</div>
-					</div>
-				</div>
-                <!--<div class="row detail-c-item">
-					<div class="col-sm-2  col-sm-offset-1">
-						<div class="text-item">勤務先住所</div>
-					</div>
-					<div class="col-sm-8">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.workPostCode}}</span><br /> 
-                            <span>{{modalInstanceCtrl001.workPrefecturesCode | prefecturesCodeTitle}}</span><br />
-                            <span>{{modalInstanceCtrl001.workAddress}}</span>
-						</div>
-					</div>
-				</div>--!>
 
-				<div class="row detail-c-item">
-					<div class="col-sm-12">
-						<title>申込状況</title>
-					</div>
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">ローン種類</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.loanType}}</span>
 						</div>
 					</div>
 				</div>
-				<div class="row detail-c-item">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">受付番号</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.accountAppSeq}}</span>
-						</div>
-					</div>
-				</div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2  col-sm-offset-1">
+            <div class="text-item">ご自宅住所_以降ご住所</div>
+               <span>{{modalInstanceCtrl001.otherAddress}}</span>
+          </div>
+          <div class="col-sm-8">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">お電話番号_自宅</div>
+              <span>{{modalInstanceCtrl001.teleNumber}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">お電話番号_携帯・PHS</div>
+              <span>{{modalInstanceCtrl001.phoneNumber}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">お住まい</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.enAddress}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">居住年数_年</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.liveYear}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">居住年数_ヶ月</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.liveMonth}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">家賃（住宅ローン）_毎月（円）</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.rentLoan}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">ご家族_配偶者</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.spouse}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">ご家族_居住形態</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.liveType}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">ご家族_扶養家族（人）</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.familyNumber}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">承知フラグ</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.masterKnowFlg}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2  col-sm-offset-1">
+            <div class="text-item">有無フラグ</div>
+          </div>
+          <div class="col-sm-8">
+            <div class="text-item">
+               <span>{{modalInstanceCtrl001.sendFlg}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">お勤め先名_漢字</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.companyName}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">お勤め先名_フリガナ</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.companyKanaName}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2  col-sm-offset-1">
+            <div class="text-item">業種</div>
+          </div>
+          <div class="col-sm-8">
+            <div class="text-item">
+               <span>{{modalInstanceCtrl001.jobType}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">お勤め先郵便番号</div>
+              <span>{{modalInstanceCtrl001.workPostCode}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">お勤め先所在地_都道府県</div>
+              <span>{{modalInstanceCtrl001.workPrefecturesCode}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">お勤め先所在地_住所</div>
+              <span>{{modalInstanceCtrl001.workAddress}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">お勤め先所在地_以降住所</div>
+              <span>{{modalInstanceCtrl001.workOtherAddress}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">お勤め先電話番号_代表電話</div>
+              <span>{{modalInstanceCtrl001.workTeleNumber}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">お勤め先電話番号_所属部直通</div>
+              <span>{{modalInstanceCtrl001.workPhoneNumber}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">所得区分フラグ</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.getKbnFlg}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">所得区分</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.getKbn}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">役職</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.position}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">従業員数</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.jobNumber}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">勤続（営）年数_年</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.workYear}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">勤続（営）年数_ヶ月</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.workMonth}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">所属部課名</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.department}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">入社年月_和暦</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.workStartYearType}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">入社年月</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.workYearMonth}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">給料日_毎月（日）</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.payment}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">最終学歴卒業年月</div>
+              <span>{{modalInstanceCtrl001.graduateYearMonth}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">最終学歴卒業年月_和暦</div>
+              <span>{{modalInstanceCtrl001.graduateYearType}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">出向先会社名_漢字</div>
+              <span>{{modalInstanceCtrl001.visitingName}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">出向先会社名_フリガナ</div>
+              <span>{{modalInstanceCtrl001.visitingKanaName}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">出向先所属部課名</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.visitingDepartment}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">役職</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.visitingPosition}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">出向先郵便番号</div>
+              <span>{{modalInstanceCtrl001.visitingPostCode}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">出向先所在地_都道府県</div>
+              <span>{{modalInstanceCtrl001.visitPreCode}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">出向先所在地_住所</div>
+              <span>{{modalInstanceCtrl001.visitAddress}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">出向先所在地_以降住所</div>
+              <span>{{modalInstanceCtrl001.visitOtherAddress}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">出向先電話番号</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.visitTelNumber}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">年収/税込年収フラグ</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.incomeFlg}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">年収/税込年収</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.incomeYear}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">お仕事の内容</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.workContent}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">社員数</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.workNumber}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">就業形態</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.workType}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">お勤め先の種類</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.workTypeCode}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">資本金</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.money}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">住宅ローン契約（当行）</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.rentLoanContract}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">本社所在地</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.comPreCode}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">健康保険証の種類</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.healthType}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">お申込金額_万円</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.applicationMoney}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">お借入希望日</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.getHopeDate}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">毎月返済希望額_円</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.returnHopeMonth}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">返済希望回数_回</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.returnHopeCount}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">内据置回数_回</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.inCount}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">ご利用目的フラグ</div>
+              <span>{{modalInstanceCtrl001.purposeFlg}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">ご利用目的_「10.その他」選択時</div>
+              <span>{{modalInstanceCtrl001.otherPurpose}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">ご利用目的_目的</div>
+              <span>{{modalInstanceCtrl001.purpose}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">ご利用目的_所要資金総額（万円）</div>
+              <span>{{modalInstanceCtrl001.moneyTotal}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">ご利用目的_お支払先（ご購入先）①</div>
+              <span>{{modalInstanceCtrl001.payMoney1}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">ご利用目的_金額①（万円）</div>
+              <span>{{modalInstanceCtrl001.money1}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">ご利用目的_お支払先（ご購入先）②</div>
+              <span>{{modalInstanceCtrl001.payMoney2}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">ご利用目的_金額②（万円）</div>
+              <span>{{modalInstanceCtrl001.money2}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">口座持ちフラグ</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.ownAccountKbn}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">支店</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.storeName}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">店舗コード</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.storeNameFlg}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">口座番号（普通）</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.accountNumber}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">返済併用フラグ</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.increaseFlg}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">返済日</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.returnDay}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">返済開始日</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.returnStartDay}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">返済元金（万円）</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.returnMoney}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">返済月1</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.increaseReturn1}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">返済月2</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.increaseReturn2}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">返済開始日</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.returnStartDay2}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">返済元金（万円）</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.returnMoney2}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">借入フラグ</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.getFlg}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">件</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.getCount}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">万円</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.getMoney}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">借入フラグ</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.getFromOtherFlg}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">[無担保ローン] 残高（万円）</div>
+              <span>{{modalInstanceCtrl001.noLoanRest}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">[無担保ローン] 年間返済額（万円）</div>
+              <span>{{modalInstanceCtrl001.noLoanReturnMoney}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">[住宅ローン] 残高（万円）</div>
+              <span>{{modalInstanceCtrl001.loanRest}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">[住宅ローン] 年間返済額（万円）</div>
+              <span>{{modalInstanceCtrl001.loanReturnMoney}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">[カードローン] 残高（万円）</div>
+              <span>{{modalInstanceCtrl001.cardLoanRest}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">[カードローン] 年間返済額（万円）</div>
+              <span>{{modalInstanceCtrl001.cardLoanRestRM}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">※「はい」選択時[信販会社等その他] 残高（万円）１</div>
+              <span>{{modalInstanceCtrl001.otherComRest}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">※「はい」選択時[信販会社等その他] 年間返済額（万円）１</div>
+              <span>{{modalInstanceCtrl001.otherComReturnMoney}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">※「はい」選択時[信販会社等その他] 残高（万円）２</div>
+              <span>{{modalInstanceCtrl001.otherComRest2}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">※「はい」選択時[信販会社等その他] 年間返済額（万円）２</div>
+              <span>{{modalInstanceCtrl001.otherComReturnMoney2}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">※「はい」選択時[信販会社等その他] 残高（万円）３</div>
+              <span>{{modalInstanceCtrl001.otherComRest3}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">※「はい」選択時[信販会社等その他] 年間返済額（万円）３</div>
+              <span>{{modalInstanceCtrl001.otherComReturnMoney3}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">※「はい」選択時[信販会社等その他] 残高（万円）４</div>
+              <span>{{modalInstanceCtrl001.otherComRest4}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">※「はい」選択時[信販会社等その他] 年間返済額（万円）４</div>
+              <span>{{modalInstanceCtrl001.otherComReturnMoney4}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">※「はい」選択時[信販会社等その他] 残高（万円）５</div>
+              <span>{{modalInstanceCtrl001.otherComRest5}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">※「はい」選択時[信販会社等その他] 年間返済額（万円）5</div>
+              <span>{{modalInstanceCtrl001.otherComReturnMoney5}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">※「はい」選択時[信販会社等その他] 残高（万円）6</div>
+              <span>{{modalInstanceCtrl001.otherComRest6}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">※「はい」選択時[信販会社等その他] 年間返済額（万円）6</div>
+              <span>{{modalInstanceCtrl001.otherComReturnMoney6}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">お取引希望店</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.hopeStoreNmae}}</span>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="text-item">お取引希望店フラグ</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.hopeStoreFlg}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">当行とのお取引</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.bankAccount}}</span>
+            </div>
+          </div>
+        </div>
+ 
 				<div class="row detail-c-item">
 					<div class="col-sm-10 col-sm-offset-1">&nbsp;</div>
 				</div>
@@ -404,257 +1596,6 @@
 				<div class="row detail-c-item">
 					<div class="col-sm-10 col-sm-offset-1">&nbsp;</div>
 				</div>
-				<div class="row detail-c-item" >
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">申込受付日付</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.loanAppTime}}</span>
-						</div>
-					</div>
-				</div>
-				<div class="row detail-c-item" ng-hide="modalInstanceCtrl001.loanType1">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">お借入希望日</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.getHopeDate}}</span>
-						</div>
-					</div>
-					<div class="col-sm-2" >
-						<div class="text-item">毎月返済希望額</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.returnHopeMonth}}</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="row detail-c-item" >
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">ご利用目的</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.otherPurpose}}</span>
-						</div>
-					</div>
-					<div class="col-sm-2" ng-hide="modalInstanceCtrl001.loanType1">
-						<div class="text-item">所要資金総額（万円）</div>
-					</div>
-					<div class="col-sm-3" ng-hide="modalInstanceCtrl001.loanType1">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.moneyTotal}}</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="row detail-c-item"  ng-hide="modalInstanceCtrl001.loanType1">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">お支払先①</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.payMoney1}}</span>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="text-item">金額①（万円）</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.money1}}</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="row detail-c-item"  ng-hide="modalInstanceCtrl001.loanType1">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">お支払先②</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.payMoney2}}</span>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="text-item">金額②（万円）</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.money2}}</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="row detail-c-item"  ng-hide="modalInstanceCtrl001.loanType1">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">返済口座</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.ownAccountKbn}}</span>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="text-item">返済内訳</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.increaseFlg}}</span>
-						</div>
-					</div>
-				</div>
-				<div class="row detail-c-item"  ng-hide="modalInstanceCtrl001.loanType1">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">返済日</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.returnDay}}</span>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="text-item">返済開始日</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.returnStartDay}}</span>
-						</div>
-					</div>
-				</div>
-				<div class="row detail-c-item"  ng-hide="modalInstanceCtrl001.loanType1">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">返済元金（万円）</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.returnMoney}}</span>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="text-item">返済希望回数</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.returnHopeCount}}</span>
-						</div>
-					</div>
-				</div>
-				<div class="row detail-c-item"  ng-hide="modalInstanceCtrl001.loanType0">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">支店名</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.hopeStoreNmae}}</span>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="text-item">当行とのお取引</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.bankAccount}}</span>
-						</div>
-					</div>
-				</div>
-				<div class="row detail-c-item">
-					<div class="col-sm-11 col-sm-offset-1">
-						<div class="text-item">ステータス変更履歴</div>
-					</div>
-				</div>
-				<div class="row detail-c-item" >
-					<div class="col-sm-10 col-sm-offset-1">
-						<table class="dp-table" style="margin-top:-23px;">
-							<tr>
-								<th>申込処理ステータス</th>
-								<th>端末ID</th>
-　　　　　　　　　　<th>変更日時</th>
-　　　　　　　　　　<th>配信状況</th>
-								<th>配信日時</th>
-								<th>Push開封状況</th>
-							</tr>
-							<tr ng-repeat="push in modalInstanceCtrl001.pushData">
-								<td>{{ push.status | statusTitle}}</td>
-								<td>{{ push.deviceTokenId }}</td>
-　　　　　　　　　　<td>{{ push.createDate }}</td>
-                                <td>{{ push.sendStatus | sendStatusTitle }}</td>
-								<td>{{ push.pushDate }}</td>
-								<td>{{ push.pushStatus | pushStatusTitle }}</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-			</div>
-<div class="card-body card-padding detail-popup ">
-		<div class="row detail-c-item">
-			<div class="col-sm-2 col-sm-offset-1">
-				<div class="text-item">ステータス</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="form-group">
-					<div class="fg-line">
-						<div class="select">
-							<select class="form-control"
-								ng-model="modalInstanceCtrl001.selectStatus">
-							<option value="1">受付</option>
-							<option value="2">処理中</option>
-							<option value="3">完了</option>
-							<option value="4">却下（総合的判断）</option>
-							</select>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="btn-colors btn-demo col-sm-3 col-sm-offset-2">
-				<button class="btn bgm-blue waves-effect"
-					ng-click="modalInstanceCtrl001.statusUpd()"
-					ng-disabled="modalInstanceCtrl001.UpdbtnDisabled">ステータス更新</button>
-			</div>
-		</div>
-			</div>
-		</div>
-	</div>
+				
 </script>
 
-<script type="text/ng-template" id="detailPopup5.html">
-<div class="popup-title">
-    <i ng-click="modalHistoryPushCtrl1.ok()"
-        class="zmdi zmdi-close zmdi-hc-fw pull-right"></i>
-</div>
-<div style="padding-top: 20px;" class="bgm-edecec">
-        <div class="block-header">
-            <h2>ステータス変更履歴</h2>
-        </div>
-        <div class="card">
-            <div class="card-body card-padding detail-popup">
-                <div class="row detail-c-item">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        <table class="dp-table">
-                            <tr>
-                                <th>申込処理ステータス</th>
-                                <th>端末ID</th>
-　　　　　　　　　　<th>変更日時</th>
-　　　　　　　　　　<th>配信状態</th>
-                                <th>配信日時</th>
-                                <th>Push開封状況</th>
-                            </tr>
-                            <tr ng-repeat="push in modalHistoryPushCtrl1.pushData">
-                                <td>{{ push.status | statusTitle}}</td>
-                                <td>{{ push.deviceTokenId }}</td>
-                                <td>{{ push.createDate }}</td>
-                                <td>{{ push.sendStatus | sendStatusTitle }}</td>
-                                <td>{{ push.pushDate }}</td>
-                                <td>{{ push.pushStatus | pushStatusTitle }}</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
- </script>
