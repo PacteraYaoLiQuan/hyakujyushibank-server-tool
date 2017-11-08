@@ -119,7 +119,7 @@ public class AccountAppDetailSelService extends AbstractBLogic<BaseResVO, BaseRe
         }
 
         // push通知履歴一覧を取得
-        List<PushrecordDoc> pushrecordDocList = new ArrayList<>();
+//        List<PushrecordDoc> pushrecordDocList = new ArrayList<>();
 
         actionLog.saveActionLog(Constants.ACTIONLOG_ACCOUNT_5 + accountAppDetailLog + ")", db);
         applicationDetailResVO.setAccountPurpose(applicationDoc.getAccountPurpose());

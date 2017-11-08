@@ -21,7 +21,6 @@ import com.scsk.response.vo.AccountDocumentInitResVO;
 import com.scsk.response.vo.BaseResVO;
 import com.scsk.util.ActionLog;
 import com.scsk.util.EncryptorUtil;
-import com.scsk.vo.AccountApp114InitVO;
 import com.scsk.vo.AccountDocument114InitVO;
 import com.scsk.vo.YamagataStatusModifyListVO;
 

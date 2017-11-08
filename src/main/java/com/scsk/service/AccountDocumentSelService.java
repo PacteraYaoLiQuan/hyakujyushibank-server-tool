@@ -15,7 +15,6 @@ import com.scsk.request.vo.AccountAppDetailReqVO;
 import com.scsk.request.vo.StatusModifyReqVO;
 import com.scsk.response.vo.Account114DocumentDetailResVO;
 import com.scsk.response.vo.BaseResVO;
-import com.scsk.response.vo.StatusModifyResVO;
 import com.scsk.util.ActionLog;
 import com.scsk.util.EncryptorUtil;
 import com.scsk.util.LogInfoUtil;
@@ -27,8 +26,6 @@ public class AccountDocumentSelService extends AbstractBLogic<BaseResVO, BaseRes
     private EncryptorUtil encryptorUtil;
     @Autowired
     private ActionLog actionLog;
-    @Autowired
-    private DocumentStatusModifyService documentStatusModifyService;
 
     @Override
     protected void preExecute(BaseResVO input) throws Exception {
@@ -55,6 +52,7 @@ public class AccountDocumentSelService extends AbstractBLogic<BaseResVO, BaseRes
         }
         account114DocumentDetailResVO.setAgreeCheck(account114DocumentDoc.getAgreeCheck());
         account114DocumentDetailResVO.setAgreeTime(account114DocumentDoc.getAgreeTime());
+        account114DocumentDetailResVO.setType(account114DocumentDoc.getType());
         account114DocumentDetailResVO.setBankNo(encryptorUtil.decrypt(account114DocumentDoc.getBankNo()));
         account114DocumentDetailResVO.setKanaLastName(encryptorUtil.decrypt(account114DocumentDoc.getKanaLastName()));
         account114DocumentDetailResVO.setKanaFirstName(encryptorUtil.decrypt(account114DocumentDoc.getKanaFirstName()));
@@ -90,7 +88,7 @@ public class AccountDocumentSelService extends AbstractBLogic<BaseResVO, BaseRes
                 ResultMessages messages = ResultMessages.warning().add(MessageKeys.E_CONTENTS_1006);
                 throw new BusinessException(messages);
             }
-            account114DocumentDetailResVO.setCard6Seq(documentImageDoc.getCardImageBack());
+            account114DocumentDetailResVO.setCard6Seq(encryptorUtil.decrypt(documentImageDoc.getCardImageBack()));
         }
         if (!account114DocumentDoc.getCard1Seq().equals("")) {
             try {
@@ -103,7 +101,7 @@ public class AccountDocumentSelService extends AbstractBLogic<BaseResVO, BaseRes
                 ResultMessages messages = ResultMessages.warning().add(MessageKeys.E_CONTENTS_1006);
                 throw new BusinessException(messages);
             }
-            account114DocumentDetailResVO.setCard1Seq(documentImageDoc.getCardImageFront());
+            account114DocumentDetailResVO.setCard1Seq(encryptorUtil.decrypt(documentImageDoc.getCardImageFront()));
         } else {
             account114DocumentDetailResVO.setCard1Seq("");
         }
@@ -118,7 +116,7 @@ public class AccountDocumentSelService extends AbstractBLogic<BaseResVO, BaseRes
                 ResultMessages messages = ResultMessages.warning().add(MessageKeys.E_CONTENTS_1006);
                 throw new BusinessException(messages);
             }
-            account114DocumentDetailResVO.setCard2Seq(documentImageDoc.getCardImageFront());
+            account114DocumentDetailResVO.setCard2Seq(encryptorUtil.decrypt(documentImageDoc.getCardImageFront()));
         } else {
             account114DocumentDetailResVO.setCard2Seq("");
         }
@@ -133,7 +131,7 @@ public class AccountDocumentSelService extends AbstractBLogic<BaseResVO, BaseRes
                 ResultMessages messages = ResultMessages.warning().add(MessageKeys.E_CONTENTS_1006);
                 throw new BusinessException(messages);
             }
-            account114DocumentDetailResVO.setCard3Seq(documentImageDoc.getCardImageFront());
+            account114DocumentDetailResVO.setCard3Seq(encryptorUtil.decrypt(documentImageDoc.getCardImageFront()));
         } else {
             account114DocumentDetailResVO.setCard3Seq("");
         }
@@ -148,7 +146,7 @@ public class AccountDocumentSelService extends AbstractBLogic<BaseResVO, BaseRes
                 ResultMessages messages = ResultMessages.warning().add(MessageKeys.E_CONTENTS_1006);
                 throw new BusinessException(messages);
             }
-            account114DocumentDetailResVO.setCard4Seq(documentImageDoc.getCardImageFront());
+            account114DocumentDetailResVO.setCard4Seq(encryptorUtil.decrypt(documentImageDoc.getCardImageFront()));
         } else {
             account114DocumentDetailResVO.setCard4Seq("");
         }
@@ -163,7 +161,7 @@ public class AccountDocumentSelService extends AbstractBLogic<BaseResVO, BaseRes
                 ResultMessages messages = ResultMessages.warning().add(MessageKeys.E_CONTENTS_1006);
                 throw new BusinessException(messages);
             }
-            account114DocumentDetailResVO.setCard5Seq(documentImageDoc.getCardImageFront());
+            account114DocumentDetailResVO.setCard5Seq(encryptorUtil.decrypt(documentImageDoc.getCardImageFront()));
         } else {
             account114DocumentDetailResVO.setCard5Seq("");
         }

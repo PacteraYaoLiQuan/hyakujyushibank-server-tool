@@ -11,6 +11,7 @@ import com.scsk.constants.Constants;
 import com.scsk.constants.MessageKeys;
 import com.scsk.exception.BusinessException;
 import com.scsk.model.AccountAppImageDoc;
+import com.scsk.model.AccountImageDoc;
 import com.scsk.request.vo.AccountAppDetailReqVO;
 import com.scsk.response.vo.AccountApp114DetailResVO;
 import com.scsk.response.vo.AccountAppDetailResVO;
@@ -78,16 +79,16 @@ public class AccountAppDetailImageSelService extends AbstractBLogic<BaseResVO, B
         accountAppDetailReqVO = (AccountAppDetailReqVO) baseResVO;
 
         // 画像情報取得
-        AccountAppImageDoc accountAppImageDoc = new AccountAppImageDoc();
+        AccountImageDoc accountAppImageDoc = new AccountImageDoc();
         try {
-            accountAppImageDoc = (AccountAppImageDoc) repositoryUtil.find(db, accountAppDetailReqVO.get_id(),
-                    AccountAppImageDoc.class);
+            accountAppImageDoc = (AccountImageDoc) repositoryUtil.find(db, accountAppDetailReqVO.get_id(),
+                    AccountImageDoc.class);
             // 本人確認書類画像
             applicationDetailResVO
-                    .setIdentificationImage(encryptorUtil.decrypt(accountAppImageDoc.getIdentificationImage()));
+                    .setIdentificationImage(encryptorUtil.decrypt(accountAppImageDoc.getCardImageFront()));
             // 本人確認書類画像
             applicationDetailResVO
-                    .setIdentificationImageBack(encryptorUtil.decrypt(accountAppImageDoc.getIdentificationImageBack()));
+                    .setIdentificationImageBack(encryptorUtil.decrypt(accountAppImageDoc.getCardImageBack()));
             // 生活状況確認書類画像
             // applicationDetailResVO.setLivingConditionsImage(encryptorUtil
             // .decrypt(accountAppImageDoc.getLivingConditionsImage()));
