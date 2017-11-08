@@ -1,13 +1,11 @@
 package com.scsk.response.vo;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.scsk.constants.Constants;
 import com.scsk.vo.AccountAppPushListVO;
 import com.scsk.vo.StatusModifyListVO;
 import com.scsk.vo.TacsflagVO;
-import com.scsk.vo.YamagataStatusModifyListVO;
 
 public class AccountApp114DetailResVO extends BaseResVO {
     private List<StatusModifyListVO> statusModifyList;
@@ -39,7 +37,7 @@ public class AccountApp114DetailResVO extends BaseResVO {
     private String kanaAddress;
     private String teleNumber;
     private String phoneNumber;
-    private List<String> jobKbn = new ArrayList<>();
+    private String jobKbn;
     private String jobKbnOther;
     private String workName;
     private String kanaWorkName;
@@ -52,15 +50,16 @@ public class AccountApp114DetailResVO extends BaseResVO {
     private String bankbookType;
     private String cardType;
     private String salesOfficeOption;
-    private List<String> accountPurpose = new ArrayList<>();
+    private String accountPurpose;
     private String accountPurposeOther;
     private String securityPassword;
     private String securityPasswordConfirm;
     private String creditlimit;
     private String onlinePassword;
     private String onlinePasswordConfirm;
-    private List<String> knowProcess = new ArrayList<>();
-    private List<String> applicationReason = new ArrayList<>();
+    private String knowProcess;
+    private String applicationReason;
+    private String applicationReasonOther;
     private String status;
     // 国名コード
     private String IC_CountryCode;
@@ -490,14 +489,6 @@ public class AccountApp114DetailResVO extends BaseResVO {
         this.phoneNumber = phoneNumber;
     }
 
-    public List<String> getJobKbn() {
-        return jobKbn;
-    }
-
-    public void setJobKbn(List<String> jobKbn) {
-        this.jobKbn = jobKbn;
-    }
-
     public String getJobKbnOther() {
         return jobKbnOther;
     }
@@ -594,11 +585,19 @@ public class AccountApp114DetailResVO extends BaseResVO {
         this.salesOfficeOption = salesOfficeOption;
     }
 
-    public List<String> getAccountPurpose() {
+    public String getJobKbn() {
+        return jobKbn;
+    }
+
+    public void setJobKbn(String jobKbn) {
+        this.jobKbn = jobKbn;
+    }
+
+    public String getAccountPurpose() {
         return accountPurpose;
     }
 
-    public void setAccountPurpose(List<String> accountPurpose) {
+    public void setAccountPurpose(String accountPurpose) {
         this.accountPurpose = accountPurpose;
     }
 
@@ -650,19 +649,19 @@ public class AccountApp114DetailResVO extends BaseResVO {
         this.onlinePasswordConfirm = onlinePasswordConfirm;
     }
 
-    public List<String> getKnowProcess() {
+    public String getKnowProcess() {
         return knowProcess;
     }
 
-    public void setKnowProcess(List<String> knowProcess) {
+    public void setKnowProcess(String knowProcess) {
         this.knowProcess = knowProcess;
     }
 
-    public List<String> getApplicationReason() {
+    public String getApplicationReason() {
         return applicationReason;
     }
 
-    public void setApplicationReason(List<String> applicationReason) {
+    public void setApplicationReason(String applicationReason) {
         this.applicationReason = applicationReason;
     }
 
@@ -1496,6 +1495,14 @@ public class AccountApp114DetailResVO extends BaseResVO {
 
     public void setF24_2(String f24_2) {
         this.f24_2 = f24_2;
+    }
+
+    public String getApplicationReasonOther() {
+        return applicationReasonOther;
+    }
+
+    public void setApplicationReasonOther(String applicationReasonOther) {
+        this.applicationReasonOther = applicationReasonOther;
     }
 
 }

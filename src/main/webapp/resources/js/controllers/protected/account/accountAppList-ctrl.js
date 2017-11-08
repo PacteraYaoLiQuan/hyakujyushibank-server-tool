@@ -1190,7 +1190,7 @@ insightApp
 												$scope.modalInstanceCtrl.workName = r.data.resultData.workName;
 												$scope.modalInstanceCtrl.kanaWorkName = r.data.resultData.kanaWorkName;
 												$scope.modalInstanceCtrl.workPostCode = r.data.resultData.workPostCode;
-												$scope.modalInstanceCtrl.worAkPrefecturesCode = r.data.resultData.workPrefecturesCode;
+												$scope.modalInstanceCtrl.workPrefecturesCode = r.data.resultData.workPrefecturesCode;
 												$scope.modalInstanceCtrl.workddress = r.data.resultData.workAddress;
 												$scope.modalInstanceCtrl.workTeleNumber = r.data.resultData.workTeleNumber;
 												$scope.modalInstanceCtrl.workNumberKbn = r.data.resultData.workNumberKbn;

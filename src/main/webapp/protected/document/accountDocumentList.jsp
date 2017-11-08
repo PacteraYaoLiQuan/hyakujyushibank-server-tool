@@ -304,61 +304,6 @@
           </div>
         </div>
                 
-				<div class="row detail-c-item">
-					<div class="col-sm-3 col-sm-offset-1">
-						<div class="text-item">届出いただく書類フラグ</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl23.typeFlg}}</span>
-						</div>
-					</div>
-				</div>
-
-        <div class="row detail-c-item">
-          <div class="col-sm-3 col-sm-offset-1">
-            <div class="text-item">読取り運転免許証番号</div>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-              <span>{{modalInstanceCtrl23.readDriverLicenseNo}}</span>
-            </div>
-          </div>
-        </div>
-				
-        <div class="row detail-c-item">
-          <div class="col-sm-3 col-sm-offset-1">
-            <div class="text-item">読取り名前の名</div>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-              <span>{{modalInstanceCtrl23.readFirstName}}</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="row detail-c-item">
-          <div class="col-sm-3 col-sm-offset-1">
-            <div class="text-item">読取り名前の姓</div>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-              <span>{{modalInstanceCtrl23.readLastName}}</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="row detail-c-item">
-          <div class="col-sm-3 col-sm-offset-1">
-            <div class="text-item">読取り生年月日</div>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-              <span>{{modalInstanceCtrl23.readBirthDay}}</span>
-            </div>
-          </div>
-        </div>
-
         <div class="row detail-c-item">
           <div class="col-sm-3 col-sm-offset-1">
             <div class="text-item">運転免許証番号</div>

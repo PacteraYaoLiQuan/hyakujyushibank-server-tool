@@ -248,18 +248,20 @@
         <div class="row detail-c-item">
           <div class="col-sm-2 col-sm-offset-1">
             <div class="text-item">同意日時</div>
+              <span>{{modalInstanceCtrl001.agreeTime}}</span>
           </div>
           <div class="col-sm-3">
             <div class="text-item">
-              <span>{{modalInstanceCtrl001.agreeTime}}</span>
+
             </div>
           </div>
           <div class="col-sm-2">
             <div class="text-item">同意チェックボックス</div>
+              <span>{{modalInstanceCtrl001.agreeCheck}}</span>
           </div>
           <div class="col-sm-3">
             <div class="text-item">
-              <span>{{modalInstanceCtrl001.agreeCheck}}</span>
+
             </div>
           </div>
         </div>
@@ -291,47 +293,6 @@
           <div class="col-sm-3">
             <div class="text-item">
 
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="text-item">読取り運転免許証番号</div>
-              <span>{{modalInstanceCtrl001.readDriverLicenseNo}}</span>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-
-            </div>
-          </div>
-        </div>
-
-        <div class="row detail-c-item">
-          <div class="col-sm-2 col-sm-offset-1">
-            <div class="text-item">読取り名前の名(読取結果確認)</div>
-              <span>{{modalInstanceCtrl001.readFirstName}}</span>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="text-item">読取り名前の姓(読取結果確認)</div>
-              <span>{{modalInstanceCtrl001.readLastName}}</span>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-
-            </div>
-          </div>
-        </div>
-
-        <div class="row detail-c-item">
-          <div class="col-sm-2 col-sm-offset-1">
-            <div class="text-item">読取り生年月日</div>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-              <span>{{modalInstanceCtrl001.readBirthDay}}</span>
             </div>
           </div>
         </div>
@@ -444,48 +405,6 @@
 					<div class="col-sm-2">
 						<div class="text-item">運転免許番号</div>
               <span>{{modalInstanceCtrl001.driverLicenseNo}}</span>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-
-						</div>
-					</div>
-				</div>
-
-        <div class="row detail-c-item">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">読取り郵便番号</div>
-              <span>{{modalInstanceCtrl001.readPostCode}}</span>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="text-item">読取り都道府県</div>
-              <span>{{modalInstanceCtrl001.readPrefecturesCode}}</span>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-
-						</div>
-					</div>
-				</div>
-				
-				<div class="row detail-c-item">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">読取り住所</div>
-              <span>{{modalInstanceCtrl001.readAddress}}</span>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-item">
-
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="text-item">読取り住所_以降ご住所</div>
-              <span>{{modalInstanceCtrl001.readOtherAddress}}</span>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-item">

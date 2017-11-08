@@ -3,7 +3,6 @@ package com.scsk.service;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
@@ -123,18 +122,11 @@ public class AccountAppDetailSelService extends AbstractBLogic<BaseResVO, BaseRe
         List<PushrecordDoc> pushrecordDocList = new ArrayList<>();
 
         actionLog.saveActionLog(Constants.ACTIONLOG_ACCOUNT_5 + accountAppDetailLog + ")", db);
-        // 取引目的{
-        String[] purpose = applicationDoc.getAccountPurpose().split(",");
-        List<String> accountPurpose=Arrays.asList(purpose);
-        Collections.sort(accountPurpose);
-        applicationDetailResVO.setAccountPurpose(accountPurpose);
+        applicationDetailResVO.setAccountPurpose(applicationDoc.getAccountPurpose());
         // その他取引目的
         applicationDetailResVO.setAccountPurposeOther(encryptorUtil.decrypt(applicationDoc.getAccountPurposeOther()));
         // 職業
-        String[] job = applicationDoc.getJobKbn().split(",");
-        List<String> jobKbn=Arrays.asList(job);
-        Collections.sort(jobKbn);
-        applicationDetailResVO.setJobKbn(jobKbn);
+        applicationDetailResVO.setJobKbn( applicationDoc.getJobKbn());
         // 受付番号
         applicationDetailResVO.setAccountAppSeq(applicationDoc.getAccountAppSeq());
         // その他職業
@@ -157,9 +149,7 @@ public class AccountAppDetailSelService extends AbstractBLogic<BaseResVO, BaseRe
 //            applicationFlg="「仮申込み」をしない";
 //        }
         applicationDetailResVO.setApplicationFlg(applicationDoc.getApplicationFlg());
-        String[] reason=applicationDoc.getApplicationReason().split(",");
-        List<String>applicationReason=Arrays.asList(reason);
-        applicationDetailResVO.setApplicationReason(applicationReason);
+        applicationDetailResVO.setApplicationReason(applicationDoc.getApplicationReason());
 //        String bankbookType="";
 //        if("1".equals(applicationDoc.getBankbookType())){
 //            bankbookType="PACK一般";
@@ -189,9 +179,8 @@ public class AccountAppDetailSelService extends AbstractBLogic<BaseResVO, BaseRe
         applicationDetailResVO.setKanaLastName(encryptorUtil.decrypt(applicationDoc.getKanaLastName()));
         applicationDetailResVO.setKanaFirstName(encryptorUtil.decrypt(applicationDoc.getKanaFirstName()));
         applicationDetailResVO.setKanaWorkName(encryptorUtil.decrypt(applicationDoc.getKanaWorkName()));
-        String[]process=applicationDoc.getKnowProcess().split(",");
-        List<String>knowProcess=Arrays.asList(process);
-        applicationDetailResVO.setKnowProcess(knowProcess);
+        applicationDetailResVO.setApplicationReasonOther(encryptorUtil.decrypt(applicationDoc.getApplicationReasonOther()));
+        applicationDetailResVO.setKnowProcess(applicationDoc.getKnowProcess());
         applicationDetailResVO.setLastNameR(encryptorUtil.decrypt(applicationDoc.getLastNameR()));
         applicationDetailResVO.setLicenseId(encryptorUtil.decrypt(applicationDoc.getLicenseId()));
         applicationDetailResVO.setLicenseIdR(encryptorUtil.decrypt(applicationDoc.getLicenseIdR()));
@@ -215,7 +204,7 @@ public class AccountAppDetailSelService extends AbstractBLogic<BaseResVO, BaseRe
 //        }
         applicationDetailResVO.setSexKbn(applicationDoc.getSexKbn());
         applicationDetailResVO.setTeleNumber(encryptorUtil.decrypt(applicationDoc.getTeleNumber()));
-        applicationDetailResVO.setUserId(encryptorUtil.decrypt(applicationDoc.getUserId()));
+        applicationDetailResVO.setUserId(applicationDoc.getUserId());
         applicationDetailResVO.setUserType(encryptorUtil.decrypt(applicationDoc.getUserType()));
         applicationDetailResVO.setWorkAddress(encryptorUtil.decrypt(applicationDoc.getWorkAddress()));
         applicationDetailResVO.setWorkName(encryptorUtil.decrypt(applicationDoc.getWorkName()));

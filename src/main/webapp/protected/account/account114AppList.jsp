@@ -285,48 +285,6 @@
 
         <div class="row detail-c-item">
           <div class="col-sm-2 col-sm-offset-1">
-            <div class="text-item">運転免許証番号(読取結果確認)</div>
-              <span>{{modalInstanceCtrl.licenseIdR}}</span>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row detail-c-item">
-          <div class="col-sm-2 col-sm-offset-1">
-            <div class="text-item">お名前（漢字）：姓(読取結果確認)</div>
-              <span>{{modalInstanceCtrl.lastNameR}}</span>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="text-item">お名前（漢字）：名(読取結果確認)</div>
-              <span>{{modalInstanceCtrl.licenseIdR}}</span>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-
-            </div>
-          </div>
-        </div>
-
-        <div class="row detail-c-item">
-          <div class="col-sm-2 col-sm-offset-1">
-            <div class="text-item">生年月日(読取結果確認)</div>
-              <span>{{modalInstanceCtrl.birthdayR}}</span>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-
-            </div>
-          </div>
-          <div class="col-sm-2">
             <div class="text-item">運転免許証番号(入力エリア)</div>
               <span>{{modalInstanceCtrl.licenseId}}</span>
           </div>
@@ -398,40 +356,6 @@
 						</div>
 					</div>
 				</div>
-               
-        <div class="row detail-c-item">
-          <div class="col-sm-2 col-sm-offset-1">
-            <div class="text-item">郵便番号(読取結果確認)</div>
-              <span>{{modalInstanceCtrl.postCodeR}}</span>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-
-            </div>
-          </div>
-
-          <div class="col-sm-2">
-            <div class="text-item">都道府県(読取結果確認)</div>
-              <span>{{modalInstanceCtrl.prefecturesCodeR}}</span>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-
-            </div>
-          </div>
-        </div>
-
-        <div class="row detail-c-item">
-          <div class="col-sm-2 col-sm-offset-1">
-            <div class="text-item">市区町村・番地・アパート・マンション名(読取結果確認)</div>
-            <span>{{modalInstanceCtrl.addressR}}</span>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-              
-            </div>
-          </div>
-         </div>
 
          <div class="row detail-c-item">
           <div class="col-sm-2 col-sm-offset-1">
@@ -551,11 +475,21 @@
 
         <div class="row detail-c-item">
           <div class="col-sm-2 col-sm-offset-1">
-            <div class="text-item">都道府県（勤務先）</div>
+            <div class="text-item">郵便番号（勤務先）</div>
+              <span>{{modalInstanceCtrl.workPostCode}}</span>
           </div>
           <div class="col-sm-3">
             <div class="text-item">
-              <span>{{modalInstanceCtrl.worAkPrefecturesCode}}</span>
+
+            </div>
+          </div>
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">都道府県（勤務先）</div>
+              <span>{{modalInstanceCtrl.workPrefecturesCode}}</span>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+
             </div>
           </div>
         </div>
@@ -681,14 +615,6 @@
 
             </div>
           </div>
-          <div class="col-sm-2 col-sm-offset-1">
-            <div class="text-item">114ダイレクトバンキングのログオンパスワード</div>
-          </div>
-          <div class="col-sm-3">
-            <div class="text-item">
-              <span>{{modalInstanceCtrl.onlinePassword}}</span>
-            </div>
-          </div>
         </div>
 
         <div class="row detail-c-item">
@@ -719,20 +645,14 @@
         <div class="row detail-c-item">
           <div class="col-sm-2 col-sm-offset-1">
             <div class="text-item">口座開設をアプリからお申込みできることをどのようにしてお知りになりましたか？</div>
-             <span><option
-               ng-repeat="knowProcess in modalInstanceCtrl.knowProcess">{{knowProcess
-                   | knowProcessTitle}}<br />
-             </option></span>
+              <span>{{modalInstanceCtrl.knowProcess}}</span>
           </div>
         </div>
 
         <div class="row detail-c-item">
           <div class="col-sm-6 col-sm-offset-1">
             <div class="text-item">アンケート：インターネットからお申込みいただいた理由は何ですか？（複数回答可）</div>
-              <span><option
-                  ng-repeat="applicationReason in modalInstanceCtrl.applicationReason">{{applicationReason
-                  | applicationReasonTitle}}<br />
-                </option></span>
+              <span>{{modalInstanceCtrl.applicationReason}}</span>
           </div>
         </div>
 
@@ -772,7 +692,6 @@
             </div>
           </div>
         </div>
-\
 
         <div class="row detail-c-item">
           <div class="col-sm-10 col-sm-offset-1">&nbsp;</div>

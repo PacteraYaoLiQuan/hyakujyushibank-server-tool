@@ -223,7 +223,7 @@ public class AccountAppListInitService extends AbstractBLogic<BaseResVO, BaseRes
             accountAppInitVO.setSecurityPasswordConfirm(encryptorUtil.decrypt(doc.getSecurityPasswordConfirm()));
             accountAppInitVO.setSexKbn(doc.getSexKbn());
             accountAppInitVO.setTeleNumber(encryptorUtil.decrypt(doc.getTeleNumber()));
-            accountAppInitVO.setUserId(encryptorUtil.decrypt(doc.getUserId()));
+            accountAppInitVO.setUserId(doc.getUserId());
             accountAppInitVO.setUserType(encryptorUtil.decrypt(doc.getUserType()));
             accountAppInitVO.setWorkAddress(encryptorUtil.decrypt(doc.getWorkAddress()));
             accountAppInitVO.setWorkName(encryptorUtil.decrypt(doc.getWorkName()));
