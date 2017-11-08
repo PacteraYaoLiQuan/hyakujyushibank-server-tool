@@ -509,18 +509,20 @@
         <div class="row detail-c-item">
           <div class="col-sm-2 col-sm-offset-1">
             <div class="text-item">電話番号（勤務先）</div>
+              <span>{{modalInstanceCtrl.workTeleNumber}}</span>
           </div>
           <div class="col-sm-3">
             <div class="text-item">
-              <span>{{modalInstanceCtrl.workTeleNumber}}</span>
+
             </div>
           </div>
           <div class="col-sm-2 col-sm-offset-1">
             <div class="text-item">電話番号区分</div>
+              <span>{{modalInstanceCtrl.workNumberKbn}}</span>
           </div>
           <div class="col-sm-3">
             <div class="text-item">
-              <span>{{modalInstanceCtrl.workNumberKbn}}</span>
+
             </div>
           </div>
         </div>
