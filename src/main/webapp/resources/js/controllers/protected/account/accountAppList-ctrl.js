@@ -1164,11 +1164,6 @@ insightApp
 												$scope.modalInstanceCtrl.applicationFlg = r.data.resultData.applicationFlg;
 												$scope.modalInstanceCtrl.agreeTime = r.data.resultData.agreeTime;
 												$scope.modalInstanceCtrl.agreeCheck = r.data.resultData.agreeCheck;
-//												$scope.modalInstanceCtrl.name = r.data.resultData.name;
-												$scope.modalInstanceCtrl.licenseIdR = r.data.resultData.licenseIdR;
-												$scope.modalInstanceCtrl.lastNameR = r.data.resultData.lastNameR;
-												$scope.modalInstanceCtrl.firstNameR = r.data.resultData.firstNameR;
-												$scope.modalInstanceCtrl.birthdayR = r.data.resultData.birthdayR;
 												$scope.modalInstanceCtrl.licenseId = r.data.resultData.licenseId;
 												$scope.modalInstanceCtrl.lastName = r.data.resultData.lastName;
 												$scope.modalInstanceCtrl.firstName = r.data.resultData.firstName;
@@ -1176,9 +1171,7 @@ insightApp
 												$scope.modalInstanceCtrl.kanaFirstName = r.data.resultData.kanaFirstName;
 												$scope.modalInstanceCtrl.birthday = r.data.resultData.birthday;
 												$scope.modalInstanceCtrl.sexKbn = r.data.resultData.sexKbn;
-												$scope.modalInstanceCtrl.postCodeR = r.data.resultData.postCodeR;
 												$scope.modalInstanceCtrl.prefecturesCodeR = r.data.resultData.prefecturesCodeR;
-												$scope.modalInstanceCtrl.addressR = r.data.resultData.addressR;
 												$scope.modalInstanceCtrl.postCode = r.data.resultData.postCode;
 												$scope.modalInstanceCtrl.prefecturesCode = r.data.resultData.prefecturesCode;
 												$scope.modalInstanceCtrl.address = r.data.resultData.address;
@@ -1197,6 +1190,7 @@ insightApp
 												$scope.modalInstanceCtrl.accountType = r.data.resultData.accountType;
 												$scope.modalInstanceCtrl.bankbookType = r.data.resultData.bankbookType;
 												$scope.modalInstanceCtrl.cardType = r.data.resultData.cardType;
+												$scope.modalInstanceCtrl.salesOfficeOptionCode = r.data.resultData.salesOfficeOptionCode;
 												$scope.modalInstanceCtrl.salesOfficeOption = r.data.resultData.salesOfficeOption;
 												$scope.modalInstanceCtrl.accountPurpose = r.data.resultData.accountPurpose;
 												$scope.modalInstanceCtrl.accountPurposeOther = r.data.resultData.accountPurposeOther;

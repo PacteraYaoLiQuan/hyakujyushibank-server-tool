@@ -85,6 +85,8 @@ public class Account114AppDoc extends UtilDoc {
     private String bankbookType = "";
     // カード種類選択
     private String cardType = "";
+    // 口座開設する店舗番号
+    private String salesOfficeOptionCode;
     // 口座開設する店舗
     private String salesOfficeOption = "";
     // 口座開設の取引目的
@@ -1314,6 +1316,14 @@ public class Account114AppDoc extends UtilDoc {
 
     public void setCardType(String cardType) {
         this.cardType = cardType;
+    }
+
+    public String getSalesOfficeOptionCode() {
+        return salesOfficeOptionCode;
+    }
+
+    public void setSalesOfficeOptionCode(String salesOfficeOptionCode) {
+        this.salesOfficeOptionCode = salesOfficeOptionCode;
     }
 
     public String getSalesOfficeOption() {

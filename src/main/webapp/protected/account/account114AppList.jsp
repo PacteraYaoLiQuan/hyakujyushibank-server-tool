@@ -571,6 +571,17 @@
             </div>
           </div>
           <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">口座開設する店舗番号</div>
+          </div>
+          <div class="col-sm-3">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl.salesOfficeOptionCode}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
             <div class="text-item">口座開設する店舗</div>
           </div>
           <div class="col-sm-3">

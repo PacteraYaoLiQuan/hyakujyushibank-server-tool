@@ -3,16 +3,15 @@ package com.scsk.vo;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ibm.icu.impl.StringRange;
 import com.scsk.constants.Constants;
 
 public class AccountApp114InitVO {
-    private String appraisalTelResult="";
-    private String appraisalIPResult="";
-    private String _id="";
-    private String _rev="";
+    private String appraisalTelResult = "";
+    private String appraisalIPResult = "";
+    private String _id = "";
+    private String _rev = "";
     private Boolean select;
-    private String accountAppSeq="";
+    private String accountAppSeq = "";
     private String docType = Constants.ACCOUNT_APP;
     private String userId;
     private String userType;
@@ -32,7 +31,7 @@ public class AccountApp114InitVO {
     private String kanaLastName;
     private String kanaFirstName;
     private String pushStatus;
- // 生計費決済
+    // 生計費決済
     private String accountPurpose1;
     // 事業費決済
     private String accountPurpose2;
@@ -71,6 +70,7 @@ public class AccountApp114InitVO {
     private String accountType;
     private String bankbookType;
     private String cardType;
+    private String salesOfficeOptionCode;
     private String salesOfficeOption;
     private List<String> accountPurpose = new ArrayList<>();
     private String accountPurposeOther;
@@ -88,11 +88,11 @@ public class AccountApp114InitVO {
     private String identificationImage;
     private String livingConditions;
     private String livingConditionsImage;
- // 会社役員・団体役員
+    // 会社役員・団体役員
     private String jobKbn101;
     // 会社員・団体職員
     private String jobKbn102;
-    // 公務員 
+    // 公務員
     private String jobKbn103;
     // 個人事業主・自営業
     private String jobKbn104;
@@ -106,7 +106,7 @@ public class AccountApp114InitVO {
     private String jobKbn108;
     // 学生
     private String jobKbn199;
-    
+
     public String getPushStatus() {
         return pushStatus;
     }
@@ -673,6 +673,14 @@ public class AccountApp114InitVO {
 
     public void setCardType(String cardType) {
         this.cardType = cardType;
+    }
+
+    public String getSalesOfficeOptionCode() {
+        return salesOfficeOptionCode;
+    }
+
+    public void setSalesOfficeOptionCode(String salesOfficeOptionCode) {
+        this.salesOfficeOptionCode = salesOfficeOptionCode;
     }
 
     public String getSalesOfficeOption() {

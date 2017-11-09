@@ -184,7 +184,6 @@ public class AccountAppListInitService extends AbstractBLogic<BaseResVO, BaseRes
             // その他職業
             accountAppInitVO.setJobKbnOther(encryptorUtil.decrypt(doc.getJobKbnOther()));
             accountAppInitVO.setAccountType(doc.getAccountType());
-            accountAppInitVO.setAddressR(encryptorUtil.decrypt(doc.getAddressR()));
             accountAppInitVO.setAddress(encryptorUtil.decrypt(doc.getAddress()));
             accountAppInitVO.setApplicationEndFlg(encryptorUtil.decrypt(doc.getApplicationEndFlg()));
             accountAppInitVO.setApplicationFlg(encryptorUtil.decrypt(doc.getApplicationFlg()));
@@ -193,11 +192,9 @@ public class AccountAppListInitService extends AbstractBLogic<BaseResVO, BaseRes
             accountAppInitVO.setApplicationReason(applicationReason);
             accountAppInitVO.setBankbookType(doc.getBankbookType());
             accountAppInitVO.setBirthday(encryptorUtil.decrypt(doc.getBirthday()));
-            accountAppInitVO.setBirthdayR(encryptorUtil.decrypt(doc.getBirthdayR()));
             accountAppInitVO.setCardType(doc.getCardType());
             accountAppInitVO.setCreditlimit(encryptorUtil.decrypt(doc.getCreditlimit()));
             accountAppInitVO.setDeviceTokenId(encryptorUtil.decrypt(doc.getDeviceTokenId()));
-            accountAppInitVO.setFirstNameR(encryptorUtil.decrypt(doc.getFirstNameR()));
             accountAppInitVO
                     .setName(encryptorUtil.decrypt(doc.getFirstName()) + encryptorUtil.decrypt(doc.getLastName()));
 
@@ -208,16 +205,13 @@ public class AccountAppListInitService extends AbstractBLogic<BaseResVO, BaseRes
             String[] process = doc.getKnowProcess().split(",");
             List<String> knowProcess = Arrays.asList(process);
             accountAppInitVO.setKnowProcess(knowProcess);
-            accountAppInitVO.setLastNameR(encryptorUtil.decrypt(doc.getLastNameR()));
             accountAppInitVO.setLicenseId(encryptorUtil.decrypt(doc.getLicenseId()));
-            accountAppInitVO.setLicenseIdR(encryptorUtil.decrypt(doc.getLicenseIdR()));
             accountAppInitVO.setOnlinePassword(encryptorUtil.decrypt(doc.getOnlinePassword()));
             accountAppInitVO.setOnlinePasswordConfirm(encryptorUtil.decrypt(doc.getOnlinePasswordConfirm()));
             accountAppInitVO.setPhoneNumber(encryptorUtil.decrypt(doc.getPhoneNumber()));
             accountAppInitVO.setPostCode(encryptorUtil.decrypt(doc.getPostCode()));
-            accountAppInitVO.setPostCodeR(encryptorUtil.decrypt(doc.getPostCodeR()));
             accountAppInitVO.setPrefecturesCode(encryptorUtil.decrypt(doc.getPrefecturesCode()));
-            accountAppInitVO.setPrefecturesCodeR(encryptorUtil.decrypt(doc.getPrefecturesCodeR()));
+            accountAppInitVO.setSalesOfficeOptionCode(encryptorUtil.decrypt(doc.getSalesOfficeOptionCode()));
             accountAppInitVO.setSalesOfficeOption(encryptorUtil.decrypt(doc.getSalesOfficeOption()));
             accountAppInitVO.setSecurityPassword(encryptorUtil.decrypt(doc.getSecurityPassword()));
             accountAppInitVO.setSecurityPasswordConfirm(encryptorUtil.decrypt(doc.getSecurityPasswordConfirm()));
