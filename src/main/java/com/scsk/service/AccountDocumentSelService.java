@@ -77,7 +77,7 @@ public class AccountDocumentSelService extends AbstractBLogic<BaseResVO, BaseRes
         account114DocumentDetailResVO.setStoreNo(encryptorUtil.decrypt(account114DocumentDoc.getStoreNo()));
         account114DocumentDetailResVO.setTelephoneNo(encryptorUtil.decrypt(account114DocumentDoc.getTelephoneNo()));
         DocumentImageDoc documentImageDoc = new DocumentImageDoc();
-        if (account114DocumentDoc.getType().contains("1")) {
+        if (account114DocumentDoc.getType().contains("0")) {
             try {
                 documentImageDoc = (DocumentImageDoc) repositoryUtil.find(db, account114DocumentDoc.getCard1Seq(),
                         DocumentImageDoc.class);

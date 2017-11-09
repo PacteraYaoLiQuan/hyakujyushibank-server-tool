@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+  pageEncoding="UTF-8"
+%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
@@ -41,87 +42,97 @@
 
 
 <div class="container">
-	<div class="block-header">
-		<h2>口座申込一覧</h2>
-		<input type="hidden" id="accountAppList" name="accountAppList"
-			ng-model="accountAppListCtrl.user" value="${sessionScope.Account}" />
-		<input type="hidden" id="accountBankCodeAppList" name="accountAppList"
-			ng-model="accountAppListCtrl.user" value="${sessionScope.bank_cd}" />
-	</div>
+  <div class="block-header">
+    <h2>口座申込一覧</h2>
+    <input type="hidden" id="accountAppList" name="accountAppList"
+      ng-model="accountAppListCtrl.user" value="${sessionScope.Account}"
+    /> <input type="hidden" id="accountBankCodeAppList"
+      name="accountAppList" ng-model="accountAppListCtrl.user"
+      value="${sessionScope.bank_cd}"
+    />
+  </div>
 
-	<div class="card">
-		<div class="card-header"></div>
-		<div class="card-body">
-			<div class="table-responsive"
-				pagination-customize-buttons="sortAndFilterButtons">
-				<table ng-table="accountAppListCtrl.table.sortAndFilter"
-					template-header="template/tables/header.html"
-					template-pagination="template/tables/pagination.html"
-					class="table table-striped table-vmiddle">
-					<colgroup>
-						<col width="3%" />
-						<col width="14%" />
-						<col width="14%" />
-						<col width="12%" />
-						<col width="15%" />
-						<col width="13%" />
-						<col width="13%" />
-						<col width="13%" />
-						<col width="3%" />
-					</colgroup>
-					<tr ng-repeat="w in $data">
-						<td
-							filter="{ 'select': 'accountAppListCtrl/table/sortAndFilter/checkItemAll.html' }"
-							style="padding-bottom: 19px"><label
-							class="checkbox checkbox-inline m-r-5"> <input
-								type="checkbox" ng-model="w.select"> <i
-								class="input-helper"></i>
-						</label></td>
-						<td data-title="'受付番号'"
-							filter="{ 'accountAppSeq': 'ng-table/filters/text-claer-2.html'}"
-							sortable="'accountAppSeq'">{{ w.accountAppSeq }}</td>
-						<td data-title="'氏名'"
-							filter="{ 'name': 'ng-table/filters/text-claer-2.html'}"
-							sortable="'name'">{{ w.name }}</td>
-						<td data-title="'ステータス'"
-							filter="{ 'status': 'ng-table/filters/select-clear.html'}"
-							sortable="'status'"
-							filter-data="accountAppListCtrl.table.accountStatusList">{{w.status
-							| accountStatusTitle}}</td>
+  <div class="card">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <div class="table-responsive"
+        pagination-customize-buttons="sortAndFilterButtons"
+      >
+        <table ng-table="accountAppListCtrl.table.sortAndFilter"
+          template-header="template/tables/header.html"
+          template-pagination="template/tables/pagination.html"
+          class="table table-striped table-vmiddle"
+        >
+          <colgroup>
+            <col width="3%" />
+            <col width="14%" />
+            <col width="14%" />
+            <col width="12%" />
+            <col width="15%" />
+            <col width="13%" />
+            <col width="13%" />
+            <col width="13%" />
+            <col width="3%" />
+          </colgroup>
+          <tr ng-repeat="w in $data">
+            <td
+              filter="{ 'select': 'accountAppListCtrl/table/sortAndFilter/checkItemAll.html' }"
+              style="padding-bottom: 19px"
+            ><label class="checkbox checkbox-inline m-r-5"> <input
+                type="checkbox" ng-model="w.select"
+              > <i class="input-helper"></i>
+            </label></td>
+            <td data-title="'受付番号'"
+              filter="{ 'accountAppSeq': 'ng-table/filters/text-claer-2.html'}"
+              sortable="'accountAppSeq'"
+            >{{ w.accountAppSeq }}</td>
+            <td data-title="'氏名'"
+              filter="{ 'name': 'ng-table/filters/text-claer-2.html'}"
+              sortable="'name'"
+            >{{ w.name }}</td>
+            <td data-title="'ステータス'"
+              filter="{ 'status': 'ng-table/filters/select-clear.html'}"
+              sortable="'status'"
+              filter-data="accountAppListCtrl.table.accountStatusList"
+            >{{w.status | accountStatusTitle}}</td>
 
-						<td data-title="'Push開封状態'"
-							filter="{ 'pushStatus': 'ng-table/filters/select-clear.html'}"
-							sortable="'pushStatus'"
-							filter-data="accountAppListCtrl.table.filterList2"><a
-							ng-click="accountAppListCtrl.table.openHistory('na', w)">
-								{{w.pushStatus | pushStatusTitle}}</a></td>
-						<td data-title="'電話番号鑑定'"
-							filter="{ 'appraisalTelResult': 'ng-table/filters/select-clear.html'}"
-							sortable="'appraisalTelResult'"
-							filter-data="accountAppListCtrl.table.filterList3"><a
-							ng-click="accountAppListCtrl.table.openTel('na', w)">{{
-								w.appraisalTelResult | appraisalResultTitle}}</a></td>
-						<td data-title="'ＩＰアドレス鑑定'"
-							filter="{ 'appraisalIPResult': 'ng-table/filters/select-clear.html'}"
-							sortable="'appraisalIPResult'"
-							filter-data="accountAppListCtrl.table.filterList3"><a
-							ng-click="accountAppListCtrl.table.openIP('na', w)">{{
-								w.appraisalIPResult | appraisalResultTitle}}</a></td>
-						<td data-title="'詳細'"
-							filter="{ '': 'accountAppListCtrl/table/sortAndFilter/clearFilter.html' }">
-							<button class="btn bgm-lightgreen" cc="{{$index}}"
-								ng-click="accountAppListCtrl.table.openNa('na', w)">
-								<i class="zmdi zmdi-menu"></i>
-							</button>
-						</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-	</div>
+            <td data-title="'Push開封状態'"
+              filter="{ 'pushStatus': 'ng-table/filters/select-clear.html'}"
+              sortable="'pushStatus'"
+              filter-data="accountAppListCtrl.table.filterList2"
+            ><a
+              ng-click="accountAppListCtrl.table.openHistory('na', w)"
+            > {{w.pushStatus | pushStatusTitle}}</a></td>
+            <td data-title="'電話番号鑑定'"
+              filter="{ 'appraisalTelResult': 'ng-table/filters/select-clear.html'}"
+              sortable="'appraisalTelResult'"
+              filter-data="accountAppListCtrl.table.filterList3"
+            ><a ng-click="accountAppListCtrl.table.openTel('na', w)">{{
+                w.appraisalTelResult | appraisalResultTitle}}</a></td>
+            <td data-title="'ＩＰアドレス鑑定'"
+              filter="{ 'appraisalIPResult': 'ng-table/filters/select-clear.html'}"
+              sortable="'appraisalIPResult'"
+              filter-data="accountAppListCtrl.table.filterList3"
+            ><a ng-click="accountAppListCtrl.table.openIP('na', w)">{{
+                w.appraisalIPResult | appraisalResultTitle}}</a></td>
+            <td data-title="'詳細'"
+              filter="{ '': 'accountAppListCtrl/table/sortAndFilter/clearFilter.html' }"
+            >
+              <button class="btn bgm-lightgreen" cc="{{$index}}"
+                ng-click="accountAppListCtrl.table.openNa('na', w)"
+              >
+                <i class="zmdi zmdi-menu"></i>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
 <script type="text/ng-template"
-	id="accountAppListCtrl/table/sortAndFilter/datepicker.html">
+  id="accountAppListCtrl/table/sortAndFilter/datepicker.html"
+>
       <div class="input-group">
                         <div class="dtp-container fg-line">
                         <input ng-model="accountAppListCtrl.table.sortAndFilter.filter().receiptDate" type="text" id='receiptDate'  class="form-control date-time-picker">
@@ -131,11 +142,13 @@
                 </div>
   </script>
 <script type="text/ng-template"
-	id="accountAppListCtrl/table/sortAndFilter/clearFilter.html">
+  id="accountAppListCtrl/table/sortAndFilter/clearFilter.html"
+>
         <button class="btn bgm-gray" ng-click="accountAppListCtrl.table.sortAndFilter.filter({})">リセット</button>
     </script>
 <script type="text/ng-template"
-	id="accountAppListCtrl/table/sortAndFilter/checkItemAll.html">
+  id="accountAppListCtrl/table/sortAndFilter/checkItemAll.html"
+>
         <label class="checkbox checkbox-inline m-r-5">
             <input type="checkbox" value="" ng-click="accountAppListCtrl.table.checkItemAll()" ng-model="accountAppListCtrl.table.checkboxes.checked"><i class="input-helper"></i>
         </label>
@@ -144,7 +157,8 @@
 
 
 <script type="text/ng-template"
-	id="accountAppListCtrl/table/sortAndFilter/paginationButtonGroup.html">
+  id="accountAppListCtrl/table/sortAndFilter/paginationButtonGroup.html"
+>
 <div style="float:right">
 				<button ng-disabled="csvOutput" button-disabled="csvOutput" class="btn bgm-blue m-l-5 btn-height" customize-button-click="accountAppListCtrl.table.csvOutput()">申込データCSV出力</button>
         <button ng-disabled="lsOutput" button-disabled="lsOutput" class="btn bgm-blue m-l-5" customize-button-click="accountAppListCtrl.table.lsOutput('size')">帳票出力</br>本人確認資料印刷</button>
@@ -152,7 +166,8 @@
 </div>       
 </script>
 <script type="text/ng-template"
-	id="accountAppListCtrl/table/sortAndFilter/paginationButton.html">
+  id="accountAppListCtrl/table/sortAndFilter/paginationButton.html"
+>
 <div style="float:right">
 		<button disabled class="btn bgm-blue m-l-5 btn-height" customize-button-click="accountAppListCtrl.table.csvOutput()">申込データCSV出力</button>
         <button disabled class="btn bgm-blue m-l-5" customize-button-click="accountAppListCtrl.table.lsOutput('size')">帳票出力</br>本人確認資料印刷</button>
@@ -703,36 +718,25 @@
 					<div class="col-sm-10 col-sm-offset-1">&nbsp;</div>
 				</div>
 				<div class="row detail-c-item">
-					<div class="col-sm-5 col-sm-offset-5">
-						<div class="preloader pls-teal"
-							ng-hide="modalInstanceCtrl.imageLoadHide">
-							<svg class="pl-circular" viewBox="25 25 50 50"> <circle
-								class="plc-path" cx="50" cy="50" r="20"></circle> </svg>
-						</div>
-					</div>
+          <div class="col-sm-10 col-sm-offset-1">&nbsp;</div>
 				</div>
 				<div class="row detail-c-item">
 					<div class="col-sm-10 col-sm-offset-1"
-						ng-hide="!modalInstanceCtrl.imageLoadHide">
+						>
 						<img
 							src="data:image/png;base64,{{modalInstanceCtrl.identificationImage}}"
 							alt="">
+
+              <div class="col-sm-10 col-sm-offset-1">&nbsp;</div>
+
+            <img
+              src="data:image/png;base64,{{modalInstanceCtrl.identificationImageBack}}"
+              alt="">
 					</div>
 				</div>
 				<div class="row detail-c-item" ng-hide="modalInstanceCtrl.imageHide">
 					<div class="col-sm-10 col-sm-offset-1">&nbsp;</div>
 				</div>
-				<div class="row detail-c-item" ng-hide="modalInstanceCtrl.imageHide">
-					<div class="col-sm-10 col-sm-offset-1"
-						ng-hide="!modalInstanceCtrl.imageLoadHide">
-						<img
-							src="data:image/png;base64,{{modalInstanceCtrl.identificationImageBack}}"
-							alt="">
-					</div>
-				</div>
-				
-
-
 
 
 </script>

@@ -1214,9 +1214,6 @@ insightApp
 												$scope.modalInstanceCtrl.selectStatus = r.data.resultData.status;
 												$scope.modalInstanceCtrl.identificationType = r.data.resultData.identificationType;
 												$scope.modalInstanceCtrl.pushData = r.data.resultData.statusModifyList;
-												if (r.data.resultData.identificationType == "A1") {
-													$scope.modalInstanceCtrl.imageHide = false;
-												}
 												imageLoad(r.data.resultData.identificationImage);
 												$scope.modalInstanceCtrl.imageLoadHide = false;
 												$scope.modalInstanceCtrl.livingConditions = r.data.resultData.livingConditions;
@@ -1323,13 +1320,13 @@ insightApp
 												};
 												$scope.modalInstanceCtrl.identificationImage = "";
 												$scope.modalInstanceCtrl.identificationImageBack = "";
-												$scope.modalInstanceCtrl.imageLoadHide = true;
+//												$scope.modalInstanceCtrl.imageLoadHide = true;
 												swal(params);
 
 											} else {
 												$scope.modalInstanceCtrl.identificationImage = r.data.resultData.identificationImage;
 												$scope.modalInstanceCtrl.identificationImageBack = r.data.resultData.identificationImageBack;
-												$scope.modalInstanceCtrl.imageLoadHide = true;
+//												$scope.modalInstanceCtrl.imageLoadHide = true;
 											}
 										}, function(e) {
 											console.log(e);
