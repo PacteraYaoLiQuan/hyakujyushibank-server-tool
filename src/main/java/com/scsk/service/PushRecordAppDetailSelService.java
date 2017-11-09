@@ -136,7 +136,6 @@ public class PushRecordAppDetailSelService extends AbstractBLogic<BaseResVO, Bas
         }
         applicationDetailResVO.setIpAddress(encryptorUtil.decrypt(applicationDoc.getIpAddress()));
         applicationDetailResVO.setAccountType(accountType);
-        applicationDetailResVO.setAddressR(encryptorUtil.decrypt(applicationDoc.getAddressR()));
         applicationDetailResVO.setAddress(encryptorUtil.decrypt(applicationDoc.getAddress()));
         applicationDetailResVO.setApplicationEndFlg(encryptorUtil.decrypt(applicationDoc.getApplicationEndFlg()));
         String applicationFlg = "";
@@ -157,7 +156,6 @@ public class PushRecordAppDetailSelService extends AbstractBLogic<BaseResVO, Bas
         }
         applicationDetailResVO.setBankbookType(bankbookType);
         applicationDetailResVO.setBirthday(encryptorUtil.decrypt(applicationDoc.getBirthday()));
-        applicationDetailResVO.setBirthdayR(encryptorUtil.decrypt(applicationDoc.getBirthdayR()));
         String cardType = "";
         if ("1".equals(applicationDoc.getCardType())) {
             cardType = "一般";
@@ -167,7 +165,6 @@ public class PushRecordAppDetailSelService extends AbstractBLogic<BaseResVO, Bas
         applicationDetailResVO.setCardType(cardType);
         applicationDetailResVO.setCreditlimit(encryptorUtil.decrypt(applicationDoc.getCreditlimit()));
         applicationDetailResVO.setDeviceTokenId(encryptorUtil.decrypt(applicationDoc.getDeviceTokenId()));
-        applicationDetailResVO.setFirstNameR(encryptorUtil.decrypt(applicationDoc.getFirstNameR()));
         applicationDetailResVO.setName(encryptorUtil.decrypt(applicationDoc.getFirstName())
                 + encryptorUtil.decrypt(applicationDoc.getLastName()));
 
@@ -176,17 +173,13 @@ public class PushRecordAppDetailSelService extends AbstractBLogic<BaseResVO, Bas
                 + encryptorUtil.decrypt(applicationDoc.getKanaLastName()));
         applicationDetailResVO.setKanaWorkName(encryptorUtil.decrypt(applicationDoc.getKanaWorkName()));
         applicationDetailResVO.setKnowProcess(applicationDoc.getKnowProcess());
-        applicationDetailResVO.setLastNameR(encryptorUtil.decrypt(applicationDoc.getLastNameR()));
         applicationDetailResVO.setLicenseId(encryptorUtil.decrypt(applicationDoc.getLicenseId()));
-        applicationDetailResVO.setLicenseIdR(encryptorUtil.decrypt(applicationDoc.getLicenseIdR()));
         applicationDetailResVO.setOnlinePassword(encryptorUtil.decrypt(applicationDoc.getOnlinePassword()));
         applicationDetailResVO
                 .setOnlinePasswordConfirm(encryptorUtil.decrypt(applicationDoc.getOnlinePasswordConfirm()));
         applicationDetailResVO.setPhoneNumber(encryptorUtil.decrypt(applicationDoc.getPhoneNumber()));
         applicationDetailResVO.setPostCode(encryptorUtil.decrypt(applicationDoc.getPostCode()));
-        applicationDetailResVO.setPostCodeR(encryptorUtil.decrypt(applicationDoc.getPostCodeR()));
         applicationDetailResVO.setPrefecturesCode(encryptorUtil.decrypt(applicationDoc.getPrefecturesCode()));
-        applicationDetailResVO.setPrefecturesCodeR(encryptorUtil.decrypt(applicationDoc.getPrefecturesCodeR()));
         applicationDetailResVO.setSalesOfficeOption(encryptorUtil.decrypt(applicationDoc.getSalesOfficeOption()));
         applicationDetailResVO.setSecurityPassword(encryptorUtil.decrypt(applicationDoc.getSecurityPassword()));
         applicationDetailResVO

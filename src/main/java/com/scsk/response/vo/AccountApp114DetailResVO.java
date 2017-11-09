@@ -16,10 +16,6 @@ public class AccountApp114DetailResVO extends BaseResVO {
     private String deviceTokenId;
     private String applicationEndFlg;
     private String applicationFlg;
-    private String licenseIdR;
-    private String lastNameR;
-    private String firstNameR;
-    private String birthdayR;
     private String licenseId;
     private String name;
     private String accountAppSeq;
@@ -28,9 +24,6 @@ public class AccountApp114DetailResVO extends BaseResVO {
     private String ipAddress;
     private String birthday;
     private String sexKbn;
-    private String postCodeR;
-    private String prefecturesCodeR;
-    private String addressR;
     private String postCode;
     private String prefecturesCode;
     private String address;
@@ -49,6 +42,7 @@ public class AccountApp114DetailResVO extends BaseResVO {
     private String accountType;
     private String bankbookType;
     private String cardType;
+    private String salesOfficeOptionCode;
     private String salesOfficeOption;
     private String accountPurpose;
     private String accountPurposeOther;
@@ -329,38 +323,6 @@ public class AccountApp114DetailResVO extends BaseResVO {
         this.applicationFlg = applicationFlg;
     }
 
-    public String getLicenseIdR() {
-        return licenseIdR;
-    }
-
-    public void setLicenseIdR(String licenseIdR) {
-        this.licenseIdR = licenseIdR;
-    }
-
-    public String getLastNameR() {
-        return lastNameR;
-    }
-
-    public void setLastNameR(String lastNameR) {
-        this.lastNameR = lastNameR;
-    }
-
-    public String getFirstNameR() {
-        return firstNameR;
-    }
-
-    public void setFirstNameR(String firstNameR) {
-        this.firstNameR = firstNameR;
-    }
-
-    public String getBirthdayR() {
-        return birthdayR;
-    }
-
-    public void setBirthdayR(String birthdayR) {
-        this.birthdayR = birthdayR;
-    }
-
     public String getLicenseId() {
         return licenseId;
     }
@@ -415,30 +377,6 @@ public class AccountApp114DetailResVO extends BaseResVO {
 
     public void setSexKbn(String sexKbn) {
         this.sexKbn = sexKbn;
-    }
-
-    public String getPostCodeR() {
-        return postCodeR;
-    }
-
-    public void setPostCodeR(String postCodeR) {
-        this.postCodeR = postCodeR;
-    }
-
-    public String getPrefecturesCodeR() {
-        return prefecturesCodeR;
-    }
-
-    public void setPrefecturesCodeR(String prefecturesCodeR) {
-        this.prefecturesCodeR = prefecturesCodeR;
-    }
-
-    public String getAddressR() {
-        return addressR;
-    }
-
-    public void setAddressR(String addressR) {
-        this.addressR = addressR;
     }
 
     public String getPostCode() {
@@ -575,6 +513,14 @@ public class AccountApp114DetailResVO extends BaseResVO {
 
     public void setCardType(String cardType) {
         this.cardType = cardType;
+    }
+
+    public String getSalesOfficeOptionCode() {
+        return salesOfficeOptionCode;
+    }
+
+    public void setSalesOfficeOptionCode(String salesOfficeOptionCode) {
+        this.salesOfficeOptionCode = salesOfficeOptionCode;
     }
 
     public String getSalesOfficeOption() {

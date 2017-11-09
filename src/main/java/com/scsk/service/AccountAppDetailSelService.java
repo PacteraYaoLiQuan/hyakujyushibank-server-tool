@@ -139,7 +139,6 @@ public class AccountAppDetailSelService extends AbstractBLogic<BaseResVO, BaseRe
 //        }
         applicationDetailResVO.setIpAddress(encryptorUtil.decrypt(applicationDoc.getIpAddress()));
         applicationDetailResVO.setAccountType(applicationDoc.getAccountType());
-        applicationDetailResVO.setAddressR(encryptorUtil.decrypt(applicationDoc.getAddressR()));
         applicationDetailResVO.setAddress(encryptorUtil.decrypt(applicationDoc.getAddress()));
         applicationDetailResVO.setApplicationEndFlg(applicationDoc.getApplicationEndFlg());
 //        String applicationFlg="";
@@ -160,7 +159,6 @@ public class AccountAppDetailSelService extends AbstractBLogic<BaseResVO, BaseRe
 //        }
         applicationDetailResVO.setBankbookType(applicationDoc.getBankbookType());
         applicationDetailResVO.setBirthday(encryptorUtil.decrypt(applicationDoc.getBirthday()));
-        applicationDetailResVO.setBirthdayR(encryptorUtil.decrypt(applicationDoc.getBirthdayR()));
 //        String cardType="";
 //        if("1".equals(applicationDoc.getCardType())){
 //            cardType="一般";
@@ -170,7 +168,6 @@ public class AccountAppDetailSelService extends AbstractBLogic<BaseResVO, BaseRe
         applicationDetailResVO.setCardType(applicationDoc.getCardType());
         applicationDetailResVO.setCreditlimit(encryptorUtil.decrypt(applicationDoc.getCreditlimit()));
         applicationDetailResVO.setDeviceTokenId(encryptorUtil.decrypt(applicationDoc.getDeviceTokenId()));
-        applicationDetailResVO.setFirstNameR(encryptorUtil.decrypt(applicationDoc.getFirstNameR()));
         applicationDetailResVO.setLastName(encryptorUtil.decrypt(applicationDoc.getLastName()));
         applicationDetailResVO.setFirstName(encryptorUtil.decrypt(applicationDoc.getFirstName()));
         applicationDetailResVO.setAgreeTime(applicationDoc.getAgreeTime());
@@ -181,17 +178,14 @@ public class AccountAppDetailSelService extends AbstractBLogic<BaseResVO, BaseRe
         applicationDetailResVO.setKanaWorkName(encryptorUtil.decrypt(applicationDoc.getKanaWorkName()));
         applicationDetailResVO.setApplicationReasonOther(encryptorUtil.decrypt(applicationDoc.getApplicationReasonOther()));
         applicationDetailResVO.setKnowProcess(applicationDoc.getKnowProcess());
-        applicationDetailResVO.setLastNameR(encryptorUtil.decrypt(applicationDoc.getLastNameR()));
         applicationDetailResVO.setLicenseId(encryptorUtil.decrypt(applicationDoc.getLicenseId()));
-        applicationDetailResVO.setLicenseIdR(encryptorUtil.decrypt(applicationDoc.getLicenseIdR()));
         applicationDetailResVO.setOnlinePassword(encryptorUtil.decrypt(applicationDoc.getOnlinePassword()));
         applicationDetailResVO
                 .setOnlinePasswordConfirm(encryptorUtil.decrypt(applicationDoc.getOnlinePasswordConfirm()));
         applicationDetailResVO.setPhoneNumber(encryptorUtil.decrypt(applicationDoc.getPhoneNumber()));
         applicationDetailResVO.setPostCode(encryptorUtil.decrypt(applicationDoc.getPostCode()));
-        applicationDetailResVO.setPostCodeR(encryptorUtil.decrypt(applicationDoc.getPostCodeR()));
         applicationDetailResVO.setPrefecturesCode(encryptorUtil.decrypt(applicationDoc.getPrefecturesCode()));
-        applicationDetailResVO.setPrefecturesCodeR(encryptorUtil.decrypt(applicationDoc.getPrefecturesCodeR()));
+        applicationDetailResVO.setSalesOfficeOptionCode(encryptorUtil.decrypt(applicationDoc.getSalesOfficeOptionCode()));
         applicationDetailResVO.setSalesOfficeOption(encryptorUtil.decrypt(applicationDoc.getSalesOfficeOption()));
         applicationDetailResVO.setSecurityPassword(encryptorUtil.decrypt(applicationDoc.getSecurityPassword()));
         applicationDetailResVO
