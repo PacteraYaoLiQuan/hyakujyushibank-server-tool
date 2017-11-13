@@ -733,6 +733,13 @@ insightApp
 											$scope.modalInstanceCtrl001.hopeStoreFlg = r.data.resultData.hopeStoreFlg;
 											$scope.modalInstanceCtrl001.bankAccount = r.data.resultData.bankAccount;
 											$scope.modalInstanceCtrl001.selectStatus = r.data.resultData.status;
+	                                         imageLoad(r.data.resultData.driverLicenseSeq);
+	                                            $scope.modalInstanceCtrl001.imageLoadHide = false;
+	                                            if ($("#accountAppList").val() == "1") {
+	                                                $scope.modalInstanceCtrl001.UpdbtnDisabled = true;
+	                                            } else {
+	                                                $scope.modalInstanceCtrl001.UpdbtnDisabled = false;
+	                                            }
 
 										}
 									}, function(e) {

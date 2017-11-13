@@ -1468,45 +1468,47 @@
 					<div class="col-sm-10 col-sm-offset-1">&nbsp;</div>
 				</div>
 				<div class="row detail-c-item">
-					<div class="col-sm-2 col-sm-offset-1">
-						<div class="text-item">本人確認書類</div>
-					</div>
-					<div class="col-sm-8">
-						<div class="text-item">
-							<span>{{modalInstanceCtrl001.identificationType |
-								identificationTypeTitle}}</span>
-						</div>
-					</div>
-				</div>
-				<div class="row detail-c-item">
-					<div class="col-sm-10 col-sm-offset-1">&nbsp;</div>
-				</div>
-				<div class="row detail-c-item">
-					<div class="col-sm-5 col-sm-offset-5">
-						<div class="preloader pls-teal"
-							ng-hide="modalInstanceCtrl001.imageLoadHide">
-							<svg class="pl-circular" viewBox="25 25 50 50"> <circle
-								class="plc-path" cx="50" cy="50" r="20"></circle> </svg>
-						</div>
-					</div>
-				</div>
-				<div class="row detail-c-item">
-					<div class="col-sm-10 col-sm-offset-1">
-						<img
-							src="data:image/png;base64,{{modalInstanceCtrl001.identificationImage}}"
-							alt="">
-					</div>
-				</div>
-				<div class="row detail-c-item" >
-					<div class="col-sm-10 col-sm-offset-1">&nbsp;</div>
-				</div>
-				<div class="row detail-c-item">
-					<div class="col-sm-10 col-sm-offset-1">
-						<img
-							src="data:image/png;base64,{{modalInstanceCtrl001.identificationImageBack}}"
-							alt="">
-					</div>
-				</div>
+
+					<div class="row detail-c-item">
+          <div class="col-sm-2 col-sm-offset-1">
+            <div class="text-item">本人確認書類</div>
+          </div>
+          <div class="col-sm-8">
+            <div class="text-item">
+              <span>{{modalInstanceCtrl001.identificationType |
+                identificationTypeTitle}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="row detail-c-item">
+          <div class="col-sm-10 col-sm-offset-1">&nbsp;</div>
+        </div>
+        <div class="row detail-c-item">
+          <div class="col-sm-5 col-sm-offset-5">
+            <div class="preloader pls-teal"
+              ng-hide="modalInstanceCtrl001.imageLoadHide">
+              <svg class="pl-circular" viewBox="25 25 50 50"> <circle
+                class="plc-path" cx="50" cy="50" r="20"></circle> </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row detail-c-item">
+          <div class="col-sm-10 col-sm-offset-1">
+            <img
+              src="data:image/png;base64,{{modalInstanceCtrl001.identificationImage}}"
+              alt="">
+          </div>
+        </div>
+        <div class="row detail-c-item" >
+          <div class="col-sm-10 col-sm-offset-1">&nbsp;</div>
+        </div>
+        <div class="row detail-c-item">
+          <div class="col-sm-10 col-sm-offset-1">
+            <img
+              src="data:image/png;base64,{{modalInstanceCtrl001.identificationImageBack}}"
+              alt="">
+          </div>
+        </div>
 
 
 				<div class="row detail-c-item" ng-hide="modalInstanceCtrl001.imageHide">
